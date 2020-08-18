@@ -101,11 +101,6 @@ dns:
   enable: true
   listen: 127.0.0.1:53
   enhanced-mode: redir-host
-  fake-ip-range: 198.18.0.1/16
-  fake-ip-filter:
-    - 'dns.msftncsi.com'
-    - 'www.msftncsi.com'
-    - 'www.msftconnecttest.com'
   nameserver:
     - 223.6.6.6
     - 180.76.76.76
