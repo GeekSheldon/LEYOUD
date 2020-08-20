@@ -107,8 +107,8 @@
 
 
 * SS：https://github.com/shadowsocks
-* SSR-WIN：https://github.com/shadowsocksr/shadowsocksr-csharp/releases
-* SSR-安卓：https://github.com/shadowsocksr/shadowsocksr-android/releases
+* SSR-WIN：https://github.com/shadowsocksrr/shadowsocksr-csharp/releases
+* SSR-安卓：https://github.com/shadowsocksrr/shadowsocksr-android/releases
 
 # ♻️ Surge/Shadowrocket Config File Download：
 * 请到相关项目页面根据说明配置 https://github.com/lhie1/Rules
