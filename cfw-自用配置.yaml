@@ -16,9 +16,9 @@ dns:
   interface-name: WLAN
 
 proxies:
-  - {name: 解锁网易云灰色歌曲(本地),server: 127.0.0.1,port: 16375,type: http,username: "",password: !<str> "",tls: false}
-  - {name: 解锁网易云灰色歌曲(在线),server: 106.15.250.108,port: 30000,type: http,username: "",password: !<str> "",tls: false}
-  - {name: Shadowsocks,server: 127.0.0.1,port: 1080,type: socks5,username: "",password: !<str> "",tls: false}
+  - {name: 解锁网易云灰色歌曲(本地),server: 127.0.0.1,port: 16375,type: http,username: "",password: ""}
+  - {name: 解锁网易云灰色歌曲(在线),server: 106.15.250.108,port: 30000,type: http,username: "",password: ""}
+  - {name: Shadowsocks,server: 127.0.0.1,port: 1080,type: socks5,username: "",password: ""}
 
 proxy-providers:
   cfw:
