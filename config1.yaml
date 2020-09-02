@@ -500,7 +500,19 @@ rule-providers:
   #   path: ./providers/RuleProviders/IqiyiHMT.yaml
 
 rules:
-  - RULE-SET,ProxyGFWlist,🚀 节点选择
+    # MyList
+  - DOMAIN-SUFFIX,yande.re,🚀 节点选择
+  - DOMAIN-SUFFIX,ustravel.cloud,🚀 节点选择
+  - DOMAIN-SUFFIX,weblank.xyz,🚀 节点选择
+  - DOMAIN-SUFFIX,saucenao.com,🚀 节点选择
+  - DOMAIN-SUFFIX,merlinblog.xyz,🚀 节点选择
+  - DOMAIN-SUFFIX,playbeasts.com,🚀 节点选择
+  - DOMAIN-SUFFIX,proxy.tgbot.co,🚀 节点选择
+  - DOMAIN-SUFFIX,blog.skk.moe,🚀 节点选择
+  - DOMAIN-SUFFIX,lancellc.gitbook.io,🚀 节点选择
+  - DOMAIN-SUFFIX,notion.so,🚀 节点选择
+  - DOMAIN-SUFFIX,42qubo,🛑 广告拦截
+  # ACL4SSR
   - RULE-SET,Telegram,📲 电报消息
   - RULE-SET,YouTube,📹 油管视频
   - RULE-SET,Netflix,🎥 奈飞视频
@@ -514,25 +526,15 @@ rules:
   - RULE-SET,Sony,🎮 游戏平台
   - RULE-SET,Steam,🎮 游戏平台
   - RULE-SET,NetEaseMusic,🎶 网易音乐
+  - RULE-SET,ProxyGFWlist,🚀 节点选择
   - RULE-SET,ChinaDomain,🎯 全球直连
   - RULE-SET,ChinaCompanyIp,🎯 全球直连
-  - GEOIP,CN,🎯 全球直连
   - RULE-SET,GoogleCN,🎯 全球直连
   - RULE-SET,UnBan,🎯 全球直连
   - RULE-SET,BanAD,🛑 广告拦截
   - RULE-SET,BanProgramAD,🍃 应用净化
   - RULE-SET,BanEasyList,🆎 AdBlock
   - RULE-SET,BanEasyListChina,🆎 AdBlock
+  - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
-  # other
-  - DOMAIN-SUFFIX,yande.re,🚀 节点选择
-  - DOMAIN-SUFFIX,ustravel.cloud,🚀 节点选择
-  - DOMAIN-SUFFIX,weblank.xyz,🚀 节点选择
-  - DOMAIN-SUFFIX,saucenao.com,🚀 节点选择
-  - DOMAIN-SUFFIX,merlinblog.xyz,🚀 节点选择
-  - DOMAIN-SUFFIX,playbeasts.com,🚀 节点选择
-  - DOMAIN-SUFFIX,proxy.tgbot.co,🚀 节点选择
-  - DOMAIN-SUFFIX,blog.skk.moe,🚀 节点选择
-  - DOMAIN-SUFFIX,lancellc.gitbook.io,🚀 节点选择
-  - DOMAIN-SUFFIX,notion.so,🚀 节点选择
-  - DOMAIN-SUFFIX,42qubo,🛑 广告拦截
+
