@@ -313,40 +313,54 @@ proxy-groups:
       - hk
     url: http://www.gstatic.com/generate_204
     interval: 300
+    proxies:
+      - REJECT
   - name: 🇯🇵 日本节点
     type: url-test
     use:
       - jp
     url: http://www.gstatic.com/generate_204
     interval: 300
+    proxies:
+      - REJECT
   - name: 🇺🇲 美国节点
     type: url-test
     use:
       - um
     url: http://www.gstatic.com/generate_204
     interval: 300
+    proxies:
+      - REJECT
   - name: 🇨🇳 台湾节点
     type: url-test
     use:
       - cn
     url: http://www.gstatic.com/generate_204
     interval: 300
+    proxies:
+      - REJECT
   - name: 🇸🇬 狮城节点
     type: url-test
     use:
       - sg
     url: http://www.gstatic.com/generate_204
     interval: 300
+    proxies:
+      - REJECT
   - name: 🇰🇷 韩国节点
     type: url-test
     use:
       - kr
     url: http://www.gstatic.com/generate_204
     interval: 300
+    proxies:
+      - REJECT
   - name: 🎥 奈飞节点
     type: select
     use:
       - nf
+    proxies:
+      - REJECT
 rules:
   # MyList
   - DOMAIN-SUFFIX,yande.re,🚀 节点选择
