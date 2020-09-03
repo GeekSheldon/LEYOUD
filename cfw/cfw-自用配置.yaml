@@ -8,6 +8,7 @@ ipv6: false
 
 dns:
   enable: true
+  ipv6: false
   listen: 127.0.0.1:53
   enhanced-mode: redir-host
   nameserver:
@@ -17,7 +18,7 @@ dns:
   fallback:
     - 208.67.222.222
     - 208.67.220.220
-    - tls://dns.google:853
+    - 208.67.222.220 
   fallback-filter:
     geoip: true
     ipcidr:

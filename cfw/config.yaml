@@ -34,6 +34,9 @@ log-level: info
 # Clash 的 RESTful API
 external-controller: '127.0.0.1:9090'
 
+# RESTful API 的口令 (可选)
+secret: ""
+
 # 您可以将静态网页资源（如 clash-dashboard）放置在一个目录中，clash 将会服务于 `RESTful API/ui`
 # 参数应填写配置目录的相对路径或绝对路径。
 # http://127.0.0.1:9090/ui/#/
@@ -42,9 +45,6 @@ external-controller: '127.0.0.1:9090'
 # Razord面板：http://clash.razord.top/#/proxies
 # external-ui: dashboard
 
-# RESTful API 的口令 (可选)
-secret: ""
-
 # 本地 SOCKS5 / HTTP(S) 服务认证
 # authentication:
 #  - "user1:pass1"
@@ -52,6 +52,9 @@ secret: ""
 
 # 允许启动ipv6
 ipv6: false
+
+# 出站接口名称
+# interface-name: en0
 
 # 实验性功能 hosts, 支持通配符 (例如 *.clash.dev 甚至 *.foo.*.example.com)
 # 静态的域名 比 通配域名 具有更高的优先级 (foo.example.com 优先于 *.example.com)
@@ -62,6 +65,7 @@ ipv6: false
 
 # dns:
 #   enable: true
+#   ipv6: false
 #   listen: 0.0.0.0:53
 #   enhanced-mode: redir-host # 模式：redir-host或fake-ip
 #   fake-ip-range: 198.18.0.1/16 # 如果你不知道这个参数的作用，请勿修改
@@ -206,6 +210,7 @@ cfw-latency-url: http://www.gstatic.com/generate_204
 cfw-profile-mixin:
   dns:
     enable: true
+    ipv6: false
     listen: 0.0.0.0:53
     enhanced-mode: redir-host
     fake-ip-range: 198.18.0.1/16
@@ -215,11 +220,12 @@ cfw-profile-mixin:
       - 'www.msftconnecttest.com'
     nameserver:
       - 223.6.6.6
-      - 180.76.76.76
+      - 223.5.5.5
       - https://dns.alidns.com/dns-query
     fallback:
       - 208.67.222.222
       - 208.67.220.220
+      - 208.67.222.220 
     fallback-filter:
       geoip: true
       ipcidr:
