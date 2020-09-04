@@ -375,6 +375,14 @@ proxy-groups:
     proxies:
       - Shadowsocks
 
+# rule-providers:
+#     LocalAreaNetwork:
+#     type: http
+#     behavior: classical # classical/domain/ipcidr
+#     path: ./LocalAreaNetwork.yaml
+#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml
+#     interval: 43200
+
 rules:
   # MyList
   - DOMAIN-SUFFIX,yande.re,🚀 节点选择
@@ -391,6 +399,7 @@ rules:
   - DOMAIN-SUFFIX,42qubo,🛑 广告拦截
 
   # ACL4SSR
+  # - RULE-SET,LocalAreaNetwork,🎯 全球直连
   - DOMAIN-SUFFIX,acl4ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
