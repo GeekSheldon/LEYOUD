@@ -396,7 +396,8 @@ rules:
   - DOMAIN-SUFFIX,lancellc.gitbook.io,🚀 节点选择
   - DOMAIN-SUFFIX,notion.so,🚀 节点选择
   - DOMAIN-SUFFIX,v2rayssr.com,🚀 节点选择
-  - DOMAIN-SUFFIX,42qubo,🛑 广告拦截
+  - DOMAIN-SUFFIX,18comic.org,🚀 节点选择
+  - DOMAIN-SUFFIX,ja.nyahentai.com,🚀 节点选择
 
   # ACL4SSR
   # - RULE-SET,LocalAreaNetwork,🎯 全球直连
