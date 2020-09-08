@@ -332,60 +332,60 @@ proxy-groups:
       - 🚀 手动切换
   - name: 🇭🇰 香港节点
     type: url-test
-    proxies:
-      - Shadowsocks
     # use:
     #   - hk
     url: http://www.gstatic.com/generate_204
     interval: 300
-  - name: 🇯🇵 日本节点
-    type: url-test
     proxies:
       - Shadowsocks
+  - name: 🇯🇵 日本节点
+    type: url-test
     # use:
     #   - jp
     url: http://www.gstatic.com/generate_204
     interval: 300
-  - name: 🇺🇲 美国节点
-    type: url-test
     proxies:
       - Shadowsocks
+  - name: 🇺🇲 美国节点
+    type: url-test
     # use:
     #   - um
     url: http://www.gstatic.com/generate_204
     interval: 300
-  - name: 🇨🇳 台湾节点
-    type: url-test
     proxies:
       - Shadowsocks
+  - name: 🇨🇳 台湾节点
+    type: url-test
     # use:
     #   - cn
     url: http://www.gstatic.com/generate_204
     interval: 300
-  - name: 🇸🇬 狮城节点
-    type: url-test
     proxies:
       - Shadowsocks
+  - name: 🇸🇬 狮城节点
+    type: url-test
     # use:
     #   - sg
     url: http://www.gstatic.com/generate_204
     interval: 300
-  - name: 🇰🇷 韩国节点
-    type: url-test
     proxies:
       - Shadowsocks
+  - name: 🇰🇷 韩国节点
+    type: url-test
     # use:
     #   - kr
     url: http://www.gstatic.com/generate_204
     interval: 300
-  - name: 🎥 奈飞节点
-    type: url-test
     proxies:
       - Shadowsocks
+  - name: 🎥 奈飞节点
+    type: url-test
     # use:
     #   - nf
     url: http://www.gstatic.com/generate_204
     interval: 300
+    proxies:
+      - Shadowsocks
 
 # rule-providers:
 #     LocalAreaNetwork:
