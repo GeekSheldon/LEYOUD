@@ -129,7 +129,6 @@ proxy-groups:
       - 🇺🇲 美国节点
       - 🇰🇷 韩国节点
       - 🚀 手动切换
-      - DIRECT
   - name: 🚀 手动切换
     type: select
     use:
@@ -164,7 +163,6 @@ proxy-groups:
       - 🇺🇲 美国节点
       - 🇰🇷 韩国节点
       - 🚀 手动切换
-      - DIRECT
   - name: 📹 油管视频
     type: select
     proxies:
@@ -177,7 +175,6 @@ proxy-groups:
       - 🇺🇲 美国节点
       - 🇰🇷 韩国节点
       - 🚀 手动切换
-      - DIRECT
   - name: 🎥 奈飞视频
     type: select
     proxies:
@@ -191,14 +188,17 @@ proxy-groups:
       - 🇺🇲 美国节点
       - 🇰🇷 韩国节点
       - 🚀 手动切换
-      - DIRECT
   - name: 📺 巴哈姆特
     type: select
     proxies:
       - 🇨🇳 台湾节点
       - 🚀 节点选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
       - 🚀 手动切换
-      - DIRECT
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -211,26 +211,31 @@ proxy-groups:
       - 🇺🇲 美国节点
       - 🇰🇷 韩国节点
       - 🚀 手动切换
-      - DIRECT
   - name: 🌏 国内媒体
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
+      - ♻️ 自动选择
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: 🌏 出海媒体
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
+      - ♻️ 自动选择
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
       - 🚀 手动切换
   - name: 📢 谷歌FCM
     type: select

@@ -130,7 +130,7 @@ proxy-groups:
       - CN
       - SG
       - KR
-      - NF
+      - DIRECT
   - name: Auto # 自动切换
     type: url-test
     use:
@@ -160,7 +160,6 @@ proxy-groups:
       - CN
       - SG
       - KR
-      - NF
   - name: Youtube # 油管视频
     type: select
     proxies:
@@ -172,7 +171,6 @@ proxy-groups:
       - CN
       - SG
       - KR
-      - NF
   - name: Netflix # 奈飞视频
     type: select
     proxies:
@@ -196,7 +194,6 @@ proxy-groups:
       - CN
       - SG
       - KR
-      - NF
   - name: Speedtest # 测速平台
     type: select
     proxies:
@@ -209,7 +206,6 @@ proxy-groups:
       - CN
       - SG
       - KR
-      - NF
   - name: AsianTV # 国内媒体
     type: select
     proxies:
@@ -222,7 +218,6 @@ proxy-groups:
       - CN
       - SG
       - KR
-      - NF
   - name: MaritimeMedia # 港澳台媒体
     type: select
     proxies:
@@ -235,7 +230,6 @@ proxy-groups:
       - CN
       - SG
       - KR
-      - NF
   - name: GlobalTV # 国外媒体
     type: select
     proxies:
@@ -247,7 +241,6 @@ proxy-groups:
       - CN
       - SG
       - KR
-      - NF
   - name: PayPal # PayPal支付
     type: select
     proxies:
@@ -260,7 +253,6 @@ proxy-groups:
       - CN
       - SG
       - KR
-      - NF
   - name: Microsoft # 微软云盘
     type: select
     proxies:
@@ -273,7 +265,6 @@ proxy-groups:
       - CN
       - SG
       - KR
-      - NF
   - name: Apple # 苹果服务
     type: select
     proxies:
@@ -286,7 +277,6 @@ proxy-groups:
       - CN
       - SG
       - KR
-      - NF
   - name: Steam # Steam平台
     type: select
     proxies:
@@ -299,7 +289,6 @@ proxy-groups:
       - CN
       - SG
       - KR
-      - NF
   - name: Netease Music # 网易音乐
     type: select
     proxies:
@@ -331,7 +320,6 @@ proxy-groups:
       - CN
       - SG
       - KR
-      - NF
   - name: HK # 香港节点
     type: url-test
     # use:
