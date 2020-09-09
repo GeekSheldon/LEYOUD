@@ -130,7 +130,7 @@ proxy-groups:
       - CN
       - SG
       - KR
-      - DIRECT
+      - Shadowsocks
   - name: Auto # 自动切换
     type: url-test
     use:
