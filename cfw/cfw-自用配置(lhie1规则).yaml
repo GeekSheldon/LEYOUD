@@ -194,7 +194,18 @@ proxy-groups:
       - CN
       - SG
       - KR
-  - name: Speedtest # 测速平台
+  - name: GlobalTV # 国外媒体
+    type: select
+    proxies:
+      - Proxy
+      - Auto
+      - HK
+      - JP
+      - UM
+      - CN
+      - SG
+      - KR
+  - name: MaritimeMedia # 港澳台媒体
     type: select
     proxies:
       - DIRECT
@@ -218,21 +229,10 @@ proxy-groups:
       - CN
       - SG
       - KR
-  - name: MaritimeMedia # 港澳台媒体
+  - name: Speedtest # 测速平台
     type: select
     proxies:
       - DIRECT
-      - Proxy
-      - Auto
-      - HK
-      - JP
-      - UM
-      - CN
-      - SG
-      - KR
-  - name: GlobalTV # 国外媒体
-    type: select
-    proxies:
       - Proxy
       - Auto
       - HK
