@@ -129,6 +129,8 @@ proxy-groups:
       - 🇺🇲 美国节点
       - 🇰🇷 韩国节点
       - 🚀 手动切换
+      - DIRECT
+      - Shadowsocks
   - name: 🚀 手动切换
     type: select
     use:
