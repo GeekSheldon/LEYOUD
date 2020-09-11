@@ -61,6 +61,7 @@ ipv6: false
 # 注意: hosts 在 fake-ip 模式下不生效
 # hosts:
 #   '*.clash.dev': 127.0.0.1
+#   '.dev': 127.0.0.1
 #   'alpha.clash.dev': '::1'
 
 # dns:
@@ -76,22 +77,26 @@ ipv6: false
 #     - 'www.msftncsi.com'
 #     - 'www.msftconnecttest.com'
 #   nameserver:
+#     - 223.6.6.6 # 阿里DNS
 #     - 223.5.5.5 # 阿里DNS
 #     - 180.76.76.76 # 百度DNS
 #     - 119.29.29.29 # 腾讯DNS
 #     - 117.50.10.10 # ONE DNS纯净版
 #     - 114.114.114.114 # 114DNS
+#     - 114.114.115.115 # 114DNS
+#     - tls://dns.alidns.com:853 # 阿里 DoT DNS
 #     - https://dns.alidns.com/dns-query # 阿里 DoH DNS
-#     - https://doh.360.cn/dns-query     # 360 DoH DNS
+#     - https://alidns_ip/dns-query # 阿里 DoH DNS
+#     - https://doh.360.cn/dns-query # 360 DoH DNS
 #   fallback:
 #     - 8.8.8.8 # 谷歌DNS
 #     - 1.1.1.1 # Cloudflare DNS
-#     - tls://dns.rubyfish.cn:853
-#     - tls://1.0.0.1:853
-#     - tls://dns.google:853
-#     - https://dns.rubyfish.cn/dns-query
-#     - https://cloudflare-dns.com/dns-query
-#     - https://dns.google/dns-query
+#     - tls://dns.rubyfish.cn:853 # 红鱼 DoT DNS
+#     - tls://1.0.0.1:853 # Cloudflare DoT DNS
+#     - tls://dns.google:853 # 谷歌 DoT DNS
+#     - https://dns.rubyfish.cn/dns-query # 红鱼 DoH DNS
+#     - https://cloudflare-dns.com/dns-query # Cloudflare DoH DNS
+#     - https://dns.google/dns-query # 谷歌 DoH DNS
 #   fallback-filter:
 #     geoip: true # 默认
 #     ipcidr: # 在这个网段内的 IP 地址会被考虑为被污染的 IP
@@ -221,11 +226,15 @@ cfw-profile-mixin:
     nameserver:
       - 223.6.6.6
       - 223.5.5.5
+      - tls://dns.alidns.com:853
       - https://dns.alidns.com/dns-query
+      - https://alidns_ip/dns-query
     fallback:
       - 208.67.222.222
       - 208.67.220.220
-      - 208.67.222.220 
+      - 208.67.222.220
+      - tls://dns.google:853
+      - https://dns.google/dns-query
     fallback-filter:
       geoip: true
       ipcidr:
