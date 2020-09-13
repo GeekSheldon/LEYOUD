@@ -58,7 +58,7 @@ proxy-providers:
   # hk: # 香港节点
   #   type: http
   #   path: ./providers/acl4ssr/hk.yaml
-  #   url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=%E6%B8%AF%7CHK%7CHong%20Kong&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false
+  #   url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=HK%7CHongKong%7CHKT%7CHKBN%7CHGC%7CWTT%7CCMI%7C%5B%5E-%5D%E6%B8%AF%7C%E6%B8%AF&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false
   #   interval: 43200
   #   health-check:
   #     enable: true
