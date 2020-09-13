@@ -325,7 +325,7 @@ proxy-groups:
       - SG
       - KR
   - name: HK # 香港节点
-    type: url-test
+    type: fallback
     # use:
     #   - hk
     url: http://www.gstatic.com/generate_204
@@ -333,7 +333,7 @@ proxy-groups:
     proxies:
       - Shadowsocks
   - name: JP # 日本节点
-    type: url-test
+    type: fallback
     # use:
     #   - jp
     url: http://www.gstatic.com/generate_204
@@ -341,7 +341,7 @@ proxy-groups:
     proxies:
       - Shadowsocks
   - name: US # 美国节点
-    type: url-test
+    type: fallback
     # use:
     #   - us
     url: http://www.gstatic.com/generate_204
@@ -349,7 +349,7 @@ proxy-groups:
     proxies:
       - Shadowsocks
   - name: TW # 台湾节点
-    type: url-test
+    type: fallback
     # use:
     #   - tw
     url: http://www.gstatic.com/generate_204
@@ -357,7 +357,7 @@ proxy-groups:
     proxies:
       - Shadowsocks
   - name: SG # 狮城节点
-    type: url-test
+    type: fallback
     # use:
     #   - sg
     url: http://www.gstatic.com/generate_204
@@ -365,7 +365,7 @@ proxy-groups:
     proxies:
       - Shadowsocks
   - name: KR # 韩国节点
-    type: url-test
+    type: fallback
     # use:
     #   - kr
     url: http://www.gstatic.com/generate_204
@@ -373,7 +373,7 @@ proxy-groups:
     proxies:
       - Shadowsocks
   - name: NF # 奈飞节点
-    type: url-test
+    type: fallback
     # use:
     #   - nf
     url: http://www.gstatic.com/generate_204
