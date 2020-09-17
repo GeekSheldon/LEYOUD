@@ -168,16 +168,6 @@ proxies:
       skip-cert-verify: false,
       udp: false
     }
-# proxy-providers:
-#   cfw:
-#     type: http
-#     path: ./cfw.yaml
-#     url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=ssr/v2ray订阅链接&list=true
-#     interval: 43200
-#     health-check:
-#       enable: true
-#       url: http://www.gstatic.com/generate_204
-#       interval: 300
 proxy-groups:
   - name: 🎵 Netease Music
     type: select
@@ -187,8 +177,6 @@ proxy-groups:
       - DIRECT
   - name: Proxy
     type: select
-    # use:
-    #   - cfw
     proxies:
       - Shadowsocks
       - DIRECT
