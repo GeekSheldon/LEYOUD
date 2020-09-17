@@ -233,6 +233,10 @@ rules:
   - GEOIP,CN,DIRECT
   - MATCH,Proxy
 
+#---------------------------------------------------#
+# 下列配置止步于Clash for Windows-10.0.4
+#---------------------------------------------------#
+
 # Clash for Windows
 # Proxies module latency test settings
 cfw-latency-timeout: 3000
