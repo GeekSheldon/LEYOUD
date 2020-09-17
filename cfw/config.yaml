@@ -19,9 +19,9 @@ redir-port: 7892
 allow-lan: true
 
 # 仅在将allow-lan设置为true时适用
-# #"*": 绑定所有IP地址
-# #192.168.122.11: 绑定单个IPv4地址
-# #"[aaaa::a8aa:ff:fe09:57d8]": 绑定单个IPv6地址
+# "*": 绑定所有IP地址
+# 192.168.122.11: 绑定单个IPv4地址
+# "[aaaa::a8aa:ff:fe09:57d8]": 绑定单个IPv6地址
 bind-address: "*"
 
 # 规则模式：rule（规则） / global（全局代理）/ direct（全局直连）/ script (脚本)
@@ -168,6 +168,16 @@ proxies:
       skip-cert-verify: false,
       udp: false
     }
+# proxy-providers:
+#   cfw:
+#     type: http
+#     path: ./cfw.yaml
+#     url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=ssr/v2ray订阅链接&list=true
+#     interval: 43200
+#     health-check:
+#       enable: true
+#       url: http://www.gstatic.com/generate_204
+#       interval: 300
 proxy-groups:
   - name: 🎵 Netease Music
     type: select
@@ -177,6 +187,8 @@ proxy-groups:
       - DIRECT
   - name: Proxy
     type: select
+    # use:
+    #   - cfw
     proxies:
       - Shadowsocks
       - DIRECT
