@@ -607,13 +607,14 @@ bypass:
 mixin: # object
   dns:
     enable: true
+    ipv6: false
     listen: 0.0.0.0:53
     enhanced-mode: redir-host
     fake-ip-range: 198.18.0.1/16
     fake-ip-filter:
-      - 'dns.msftncsi.com'
-      - 'www.msftncsi.com'
-      - 'www.msftconnecttest.com'
+      - dns.msftncsi.com
+      - www.msftncsi.com
+      - www.msftconnecttest.com
     nameserver:
       - 223.6.6.6
       - 223.5.5.5
