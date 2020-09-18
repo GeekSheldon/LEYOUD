@@ -28,9 +28,9 @@ proxies:
 
 proxy-providers:
   cfw: # 所有节点
-    type: http 
-    path: cfw.yaml
-    #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=ssr/v2ray订阅链接&list=true
+    type: http
+    path: ./cfw.yaml
+    #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=ssr或v2ray订阅链接&list=true
     url: https://suo.yt/fsCcv39 # 公益节点
     interval: 43200
     health-check:
