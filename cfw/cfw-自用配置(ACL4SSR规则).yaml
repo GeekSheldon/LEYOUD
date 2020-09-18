@@ -33,24 +33,24 @@ proxies:
   - {name: 解锁网易云灰色歌曲(本地), type: http, server: 127.0.0.1, port: 16375, username: "", password: "", tls: false, skip-cert-verify: false, udp: false}
   - {name: 解锁网易云灰色歌曲(在线), type: http, server: 106.15.250.108, port: 30000, username: "", password: "", tls: false, skip-cert-verify: false, udp: false}
   - {name: Shadowsocks, type: socks5, server: 127.0.0.1, port: 1080, username: "", password: "", tls: false, skip-cert-verify: false, udp: false}
-  # - {name: ss1, server: server, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: password, udp: false}
-  # - {name: ss2, server: server, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: password, plugin: obfs, plugin-opts: {mode: tls, host: bing.com}, udp: false}
-  # - {name: ss3, server: server, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: password, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: bing.com, path: /, tls: false, mux: false, skip-cert-verify: false}, udp: false}
-  # - {name: vmess, server: server, port: 443, type: vmess, uuid: uuid, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /path, ws-headers: {Host: v2ray.com}, udp: false}
-  # - {name: vmess-http, server: server, port: 443, type: vmess, uuid: uuid, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [server]}}, udp: false}
-  # - {name: socks, type: socks5, server: server, port: 443, username: username, password :password, tls: false, skip-cert-verify: false, udp: false}
-  # - {name: http, server: server, port: 443, type: http, username: username, password: password, tls: false, skip-cert-verify: false, udp: false}
-  # - {name: snell, server: server, port: 44046, type: snell, psk: yourpsk, udp: false}
-  # - {name: trojan, server: server, port: 443, type: trojan, password: yourpsk, sni: example.com, skip-cert-verify: false, udp: false}
-  # - {name: ssr, server: server, port: 443, type: ssr, cipher: chacha20-ietf, password: password, protocol: auth_sha1_v4, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: false}
+# - {name: ss1, server: server, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: password, udp: false}
+# - {name: ss2, server: server, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: password, plugin: obfs, plugin-opts: {mode: tls, host: bing.com}, udp: false}
+# - {name: ss3, server: server, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: password, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: bing.com, path: /, tls: false, mux: false, skip-cert-verify: false}, udp: false}
+# - {name: vmess, server: server, port: 443, type: vmess, uuid: uuid, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /path, ws-headers: {Host: v2ray.com}, udp: false}
+# - {name: vmess-http, server: server, port: 443, type: vmess, uuid: uuid, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [server]}}, udp: false}
+# - {name: socks, type: socks5, server: server, port: 443, username: username, password :password, tls: false, skip-cert-verify: false, udp: false}
+# - {name: http, server: server, port: 443, type: http, username: username, password: password, tls: false, skip-cert-verify: false, udp: false}
+# - {name: snell, server: server, port: 44046, type: snell, psk: yourpsk, udp: false}
+# - {name: trojan, server: server, port: 443, type: trojan, password: yourpsk, sni: example.com, skip-cert-verify: false, udp: false}
+# - {name: ssr, server: server, port: 443, type: ssr, cipher: chacha20-ietf, password: password, protocol: auth_sha1_v4, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: false}
 
 proxy-providers:
   # 所有节点
   cfw: 
     {
-      url: https://suo.yt/fsCcv39, # 公益节点
-      #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false,
-      type: http, path: ./providers/acl4ssr/cfw.yaml, interval: 43200,health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}
+     url: https://suo.yt/fsCcv39, # 公益节点
+     #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false,
+     type: http, path: ./providers/acl4ssr/cfw.yaml, interval: 43200,health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}
     }
 
   # 香港节点
@@ -99,38 +99,39 @@ proxy-groups:
   - {name: 🛡️ 隐私防护, type: select, proxies: [REJECT, DIRECT]}
   - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 节点选择, ♻️ 自动选择, DIRECT, 🇸🇬 狮城节点, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🚀 手动切换]}
   - {
-    name: 🇭🇰 香港节点, type: fallback, url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks],
-    #use: [hk]
+     name: 🇭🇰 香港节点, type: fallback,
+     #use: [hk]
+     url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
     }
   - {
-    name: 🇯🇵 日本节点, type: fallback,
-    #use: [jp],
-    url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
+     name: 🇯🇵 日本节点, type: fallback,
+     #use: [jp],
+     url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
     }
   - {
-    name: 🇺🇲 美国节点, type: fallback,
-    #use: [um],
-    url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
+     name: 🇺🇲 美国节点, type: fallback,
+     #use: [um],
+     url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
     }
   - {
-    name: 🇨🇳 台湾节点, type: fallback,
-    #use: [cn],
-    url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
+     name: 🇨🇳 台湾节点, type: fallback,
+     #use: [cn],
+     url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
     }
   - {
-    name: 🇸🇬 狮城节点, type: fallback,
-    #use: [sg],
-    url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
+     name: 🇸🇬 狮城节点, type: fallback,
+     #use: [sg],
+     url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
     }
   - {
-    name: 🇰🇷 韩国节点, type: fallback,
-    #use: [kr],
-    url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
+     name: 🇰🇷 韩国节点, type: fallback,
+     #use: [kr],
+     url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
     }
   - {
-    name: 🎥 奈飞节点, type: fallback,
-    #use: [nf],
-    url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
+     name: 🎥 奈飞节点, type: fallback,
+     #use: [nf],
+     url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
     }
 
 # rule-providers:
