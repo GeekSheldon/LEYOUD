@@ -27,7 +27,7 @@ proxies:
     }
 
 proxy-providers:
-  cfw: # 所有节点
+  cfw:
     type: http
     path: ./cfw.yaml
     #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=ssr或v2ray订阅链接&list=true
