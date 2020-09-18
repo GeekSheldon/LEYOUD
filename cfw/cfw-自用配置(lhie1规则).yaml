@@ -27,7 +27,7 @@ dns:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
-  interface-name: WLAN
+interface-name: WLAN # 出站接口名称
 
 proxies:
   - {name: 解锁网易云灰色歌曲(本地), type: http, server: 127.0.0.1, port: 16375, username: "", password: "", tls: false, skip-cert-verify: false, udp: false}

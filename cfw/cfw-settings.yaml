@@ -631,7 +631,7 @@ mixin: # object
       geoip: true
       ipcidr:
         - 240.0.0.0/4
-    interface-name: WLAN
+  interface-name: WLAN # 出站接口名称
 
 processes: # array
   # 启动订阅转换程序，端口号25500
