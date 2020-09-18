@@ -5,18 +5,13 @@ log-level: info
 external-controller: 127.0.0.1:9090
 
 dns:
-  enable: true
-  enhanced-mode: redir-host
-  nameserver:
-    - 223.6.6.6
-    - 223.5.5.5
-  fallback:
-    - 208.67.222.222
-    - 208.67.220.220
-  fallback-filter:
-    geoip: true
-    ipcidr:
-      - 240.0.0.0/4
+  {
+    enable: true,
+    enhanced-mode: redir-host,
+    nameserver: [223.6.6.6, 223.5.5.5],
+    fallback: [208.67.222.222, 208.67.220.220],
+    fallback-filter: {geoip: true, ipcidr: [240.0.0.0/4]}
+  }
 
 proxies:
   - {
@@ -28,23 +23,22 @@ proxies:
 
 proxy-providers:
   cfw:
-    type: http
-    path: ./cfw.yaml
-    #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=ssr或v2ray订阅链接&list=true
-    url: https://suo.yt/fsCcv39 # 公益节点
-    interval: 43200
-    health-check:
-        enable: true
-        url: http://www.gstatic.com/generate_204
-        interval: 300
+    {
+      type: http,
+      path: ./cfw.yaml,
+      #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=ssr或v2ray订阅链接&list=true,
+      url: https://suo.yt/fsCcv39, # 公益节点
+      interval: 43200,
+      health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}
+    }
 
 proxy-groups:
-  - name: Proxy
-    type: select
-    use:
-      - cfw
-    proxies:
-      - Shadowsocks
+  - {
+    name: Proxy,
+    type: select,
+    use: [cfw],
+    proxies: [Shadowsocks]
+    }
 
 rules:
   - DOMAIN-SUFFIX,ip6-localhost,Proxy
