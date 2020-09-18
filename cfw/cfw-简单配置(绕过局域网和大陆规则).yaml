@@ -27,16 +27,16 @@ proxies:
     }
 
 proxy-providers:
-cfw: # 所有节点
-   type: http 
-   path: cfw.yaml
-   # url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=ssr/v2ray订阅链接&list=true
-   url: https://suo.yt/fsCcv39 # 公益节点
-   interval: 43200
-   health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
+  cfw: # 所有节点
+    type: http 
+    path: cfw.yaml
+    #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=ssr/v2ray订阅链接&list=true
+    url: https://suo.yt/fsCcv39 # 公益节点
+    interval: 43200
+    health-check:
+        enable: true
+        url: http://www.gstatic.com/generate_204
+        interval: 300
 
 proxy-groups:
   - name: Proxy
@@ -60,5 +60,16 @@ rules:
   - IP-CIDR6,fc00::/7,Proxy,no-resolve
   - IP-CIDR6,fe80::/10,Proxy,no-resolve
   - IP-CIDR6,fd00::/8,Proxy,no-resolve
+  - DOMAIN,router.asus.com,Proxy
+  - DOMAIN-SUFFIX,hiwifi.com,Proxy
+  - DOMAIN-SUFFIX,leike.cc,Proxy
+  - DOMAIN-SUFFIX,miwifi.com,Proxy
+  - DOMAIN-SUFFIX,my.router,Proxy
+  - DOMAIN-SUFFIX,p.to,Proxy
+  - DOMAIN-SUFFIX,peiluyou.com,Proxy
+  - DOMAIN-SUFFIX,phicomm.me,Proxy
+  - DOMAIN-SUFFIX,routerlogin.com,Proxy
+  - DOMAIN-SUFFIX,tendawifi.com,Proxy
+  - DOMAIN-SUFFIX,zte.home,Proxy
   - GEOIP,CN,DIRECT
   - MATCH,Proxy
