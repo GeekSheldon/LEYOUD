@@ -138,7 +138,7 @@ proxy-groups:
 #   type: http
 #   behavior: classical # classical/domain/ipcidr
 #   path: ./providers/acl4ssr/rules/LocalAreaNetwork.yaml
-#   url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml
+#   url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml
 #   interval: 43200
 
 rules:
