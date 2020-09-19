@@ -245,7 +245,7 @@ cfw-profile-mixin:
       geoip: true
       ipcidr:
         - 240.0.0.0/4
-  interface-name: WLAN # 出站接口名称
+  # interface-name: WLAN # 出站接口名称
 
 # 打断连接
 # Identify strategy of breaking connections after switching to a new proxy/profile/mode
