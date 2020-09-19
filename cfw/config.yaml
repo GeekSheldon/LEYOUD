@@ -73,9 +73,9 @@ ipv6: false
 #   fake-ip-filter: # fake ip 白名单列表，如果你不知道这个参数的作用，请勿修改
 #     - '*.lan'
 #     - localhost.ptlogin2.qq.com
-#     - 'dns.msftncsi.com'
-#     - 'www.msftncsi.com'
-#     - 'www.msftconnecttest.com'
+#     - dns.msftncsi.com
+#     - www.msftncsi.com
+#     - www.msftconnecttest.com
 #   nameserver:
 #     - 223.6.6.6 # 阿里DNS
 #     - 223.5.5.5 # 阿里DNS
@@ -226,9 +226,9 @@ cfw-profile-mixin:
     enhanced-mode: redir-host
     fake-ip-range: 198.18.0.1/16
     fake-ip-filter:
-      - 'dns.msftncsi.com'
-      - 'www.msftncsi.com'
-      - 'www.msftconnecttest.com'
+      - dns.msftncsi.com
+      - www.msftncsi.co
+      - www.msftconnecttest.com
     nameserver:
       - 223.6.6.6
       - 223.5.5.5
