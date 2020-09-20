@@ -1,6 +1,6 @@
 #---------------------------------------------------#
 # lhie1规则地址 https://github.com/lhie1/Rules
-# 配置文件写法参照 https://github.com/Hackl0us/SS-Rule-Snippet/blob/master/LAZY_RULES/clash.yaml
+# 配置文件参考示例 https://github.com/Hackl0us/SS-Rule-Snippet/blob/master/LAZY_RULES/clash.yaml
 #---------------------------------------------------#
 mixed-port: 7890
 redir-port: 7892
