@@ -296,7 +296,7 @@ cfw-proxies-order: default
 # Refer: https://docs.cfw.lbyczf.com/contents/childprocess.html
 # cfw-child-process:
 #   # 启动订阅转换程序，端口号25500
-#   - command: "subconverter.exe" # run.cmd 程序名称 subconverter.exe -cfw >>logs/run.log 2>&1
+#   - command: subconverter.exe
 #     args:
 #       - "-cfw" # 运行参数1
 #       - "-f" # 运行参数2
@@ -308,7 +308,7 @@ cfw-proxies-order: default
 #       #shell: true # 则在 shell 中运行 command
 #      
 #   # 启动解锁网易云灰色歌曲程序，端口号16375
-#   - command: "unblockneteasemusic.exe"
+#   - command: unblockneteasemusic.exe
 #     args:
 #       - "-p"
 #       - "16375"
