@@ -1,6 +1,6 @@
 #---------------------------------------------------#
-# 配置文件需要放置在 $HOME/.config/clash/config.yaml
-# 或者运行目录下的config.yaml
+# 配置文件需要放置在 $HOME/.config/clash/config.yaml或者运行目录下的config.yaml
+# 配置文件写法参照 https://github.com/Hackl0us/SS-Rule-Snippet/blob/master/LAZY_RULES/clash.yaml
 #---------------------------------------------------#
 
 # 混合端口 HTTP和SOCKS5用一个端口

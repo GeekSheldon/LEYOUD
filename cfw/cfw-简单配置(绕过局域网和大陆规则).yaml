@@ -1,3 +1,7 @@
+#---------------------------------------------------#
+# 配置文件写法参照
+# https://github.com/Hackl0us/SS-Rule-Snippet/blob/master/LAZY_RULES/clash.yaml
+#---------------------------------------------------#
 mixed-port: 7890
 allow-lan: true
 mode: Rule

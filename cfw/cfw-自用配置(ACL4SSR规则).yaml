@@ -1,3 +1,7 @@
+#---------------------------------------------------#
+# ACL4SSR规则地址 https://github.com/ACL4SSR/ACL4SSR
+# 配置文件写法参照 https://github.com/Hackl0us/SS-Rule-Snippet/blob/master/LAZY_RULES/clash.yaml
+#---------------------------------------------------#
 mixed-port: 7890
 redir-port: 7892
 allow-lan: true
