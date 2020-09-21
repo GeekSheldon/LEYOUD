@@ -342,336 +342,336 @@ rule-providers:
     behavior: classical
     path: ./providers/lhie1/rules/Reject.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Reject.yaml
-    interval: 42300
+    interval: 43200
 
   Special:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Special.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Special.yaml
-    interval: 42300
+    interval: 43200
 
   Netflix:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Netflix.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Netflix.yaml
-    interval: 42300
+    interval: 43200
 
   Spotify:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Spotify.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Spotify.yaml
-    interval: 42300
+    interval: 43200
 
-  YouTube Music:
-    type: http
-    behavior: classical
-    path: ./providers/lhie1/rules/YouTube_Music.yaml
-    url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/YouTube%20Music.yaml
-    interval: 42300
+  # YouTube Music:
+  #   type: http
+  #   behavior: classical
+  #   path: ./providers/lhie1/rules/YouTube_Music.yaml
+  #   url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/YouTube%20Music.yaml
+  #   interval: 43200
 
   YouTube:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/YouTube.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/YouTube.yaml
-    interval: 42300
+    interval: 43200
 
   Bilibili:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Bilibili.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Bilibili.yaml
-    interval: 42300
+    interval: 43200
 
   iQiyi:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/iQiyi.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/iQiyi.yaml
-    interval: 42300
+    interval: 43200
 
   Letv:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Letv.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Letv.yaml
-    interval: 42300
+    interval: 43200
 
-  MOO:
-    type: http
-    behavior: classical
-    path: ./providers/lhie1/rules/MOO.yaml
-    url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/MOO.yaml
-    interval: 42300
+  # MOO:
+  #   type: http
+  #   behavior: classical
+  #   path: ./providers/lhie1/rules/MOO.yaml
+  #   url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/MOO.yaml
+  #   interval: 43200
 
   Netease Music:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Netease_Music.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Netease%20Music.yaml
-    interval: 42300
+    interval: 43200
 
   Tencent Video:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Tencent_Video.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Tencent%20Video.yaml
-    interval: 42300
+    interval: 43200
 
   Youku:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Youku.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Youku.yaml
-    interval: 42300
+    interval: 43200
 
   ABC:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/ABC.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/ABC.yaml
-    interval: 42300
+    interval: 43200
 
   Abema TV:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Abema_TV.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Abema%20TV.yaml
-    interval: 42300
+    interval: 43200
 
   Amazon:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Amazon.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Amazon.yaml
-    interval: 42300
+    interval: 43200
 
   Apple News:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Apple_News.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Apple%20News.yaml
-    interval: 42300
+    interval: 43200
 
   Apple TV:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Apple_TV.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Apple%20TV.yaml
-    interval: 42300
+    interval: 43200
 
   Bahamut:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Bahamut.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Bahamut.yaml
-    interval: 42300
+    interval: 43200
 
   BBC iPlayer:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/BBC_iPlayer.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/BBC%20iPlayer.yaml
-    interval: 42300
+    interval: 43200
 
   DAZN:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/DAZN.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/DAZN.yaml
-    interval: 42300
+    interval: 43200
 
   Disney Plus:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Disney_Plus.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Disney%20Plus.yaml
-    interval: 42300
+    interval: 43200
 
   encoreTVB:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/encoreTVB.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/encoreTVB.yaml
-    interval: 42300
+    interval: 43200
 
   Fox Now:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Fox_Now.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Fox%20Now.yaml
-    interval: 42300
+    interval: 43200
 
   Fox+:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Fox+.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Fox%2B.yaml
-    interval: 42300
+    interval: 43200
 
   HBO:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/HBO.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/HBO.yaml
-    interval: 42300
+    interval: 43200
 
   Hulu Japan:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Hulu_Japan.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Hulu%20Japan.yaml
-    interval: 42300
+    interval: 43200
 
   Hulu:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Hulu.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Hulu.yaml
-    interval: 42300
+    interval: 43200
 
   Japonx:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Japonx.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Japonx.yaml
-    interval: 42300
+    interval: 43200
 
   JOOX:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/JOOX.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/JOOX.yaml
-    interval: 42300
+    interval: 43200
 
   KKBOX:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/KKBOX.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/KKBOX.yaml
-    interval: 42300
+    interval: 43200
 
   KKTV:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/KKTV.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/KKTV.yaml
-    interval: 42300
+    interval: 43200
 
   Line TV:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Line_TV.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Line%20TV.yaml
-    interval: 42300
+    interval: 43200
 
   myTV SUPER:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/myTV_SUPER.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/myTV%20SUPER.yaml
-    interval: 42300
+    interval: 43200
 
   Pandora:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Pandora.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Pandora.yaml
-    interval: 42300
+    interval: 43200
 
   PBS:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/PBS.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/PBS.yaml
-    interval: 86400
+    interval: 43200
 
   Pornhub:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Pornhub.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Pornhub.yaml
-    interval: 42300
+    interval: 43200
 
   Soundcloud:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Soundcloud.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Soundcloud.yaml
-    interval: 42300
+    interval: 43200
 
   ViuTV:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/ViuTV.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/ViuTV.yaml
-    interval: 42300
+    interval: 43200
 
   Telegram:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Telegram.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Telegram.yaml
-    interval: 42300
+    interval: 43200
     
   Steam:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Steam.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Steam.yaml
-    interval: 42300
+    interval: 43200
 
   Speedtest:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Speedtest.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Speedtest.yaml
-    interval: 42300
+    interval: 43200
 
   PayPal:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/PayPal.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/PayPal.yaml
-    interval: 42300
+    interval: 43200
 
   Microsoft:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Microsoft.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Microsoft.yaml
-    interval: 42300
+    interval: 43200
 
   Proxy:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Proxy.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Proxy.yaml
-    interval: 42300
+    interval: 43200
 
   Domestic:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Domestic.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Domestic.yaml
-    interval: 42300
+    interval: 43200
 
   Apple:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Apple.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Apple.yaml
-    interval: 42300
+    interval: 43200
 
   Domestic IPs:
     type: http
     behavior: ipcidr
     path: ./providers/lhie1/rules/Domestic_IPs.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Domestic%20IPs.yaml
-    interval: 42300
+    interval: 43200
 
 
 # rule参考示例
@@ -717,12 +717,12 @@ rules:
   - RULE-SET,Special,DIRECT
   - RULE-SET,Netflix,Netflix
   - RULE-SET,Spotify,Spotify
-  # - RULE-SET,YouTube Music,YouTube
+  #  - RULE-SET,YouTube Music,YouTube
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Bilibili,Bilibili
   - RULE-SET,iQiyi,AsianTV
   - RULE-SET,Letv,AsianTV
-  # - RULE-SET,MOO,AsianTV
+  #  - RULE-SET,MOO,AsianTV
   - RULE-SET,Netease Music,AsianTV
   - RULE-SET,Tencent Video,AsianTV
   - RULE-SET,Youku,AsianTV

@@ -34,8 +34,6 @@ dns:
 #interface-name: WLAN # 出站接口名称
 
 proxies:
-  - {name: 解锁网易云灰色歌曲(本地), type: http, server: 127.0.0.1, port: 16375, username: "", password: "", tls: false, skip-cert-verify: false, udp: false}
-  - {name: 解锁网易云灰色歌曲(在线), type: http, server: 106.15.250.108, port: 30000, username: "", password: "", tls: false, skip-cert-verify: false, udp: false}
   - {name: Shadowsocks, type: socks5, server: 127.0.0.1, port: 1080, username: "", password: "", tls: false, skip-cert-verify: false, udp: false}
 # - {name: ss1, server: server, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: password, udp: false}
 # - {name: ss2, server: server, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: password, plugin: obfs, plugin-opts: {mode: tls, host: bing.com}, udp: false}
@@ -218,14 +216,6 @@ proxy-groups:
       - TW
       - SG
       - KR
-  - name: Netease Music # 网易音乐
-    type: select
-    proxies:
-      - DIRECT
-      - 解锁网易云灰色歌曲(本地)
-      - 解锁网易云灰色歌曲(在线)
-      - Proxy
-      - Auto
   - name: Domestic # 直连网站
     type: select
     proxies:
