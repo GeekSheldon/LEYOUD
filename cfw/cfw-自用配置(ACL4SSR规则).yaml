@@ -149,7 +149,7 @@ proxy-groups:
   #url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml
   #interval: 43200
 
-# rule 参考示例
+# rule参考示例
 # https://lancellc.gitbook.io/clash/clash-config-file/rules
 rules:
   # MyList
