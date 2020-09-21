@@ -48,6 +48,8 @@ proxies:
 # - {name: trojan, server: server, port: 443, type: trojan, password: yourpsk, sni: example.com, alpn: [h2, http/1.1], skip-cert-verify: false, udp: false}
 # - {name: ssr, server: server, port: 443, type: ssr, cipher: chacha20-ietf, password: password, protocol: auth_sha1_v4, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: false}
 
+# proxy-provider搭配subconverter参考示例
+# https://10101.io/2020/02/12/use-clash-proxy-provider-with-subconverter
 proxy-providers:
   cfw: # 所有节点
     {
@@ -137,14 +139,18 @@ proxy-groups:
      url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
     }
 
-# rule-providers:
-#   LocalAreaNetwork:
-#   type: http
-#   behavior: classical # classical/domain/ipcidr
-#   path: ./providers/acl4ssr/rules/LocalAreaNetwork.yaml
-#   url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml
-#   interval: 43200
+# rule-provider参考示例参考示例
+# https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
+#rule-providers:
+  #LocalAreaNetwork:
+  #type: http
+  #behavior: classical # classical/domain/ipcidr
+  #path: ./providers/acl4ssr/rules/LocalAreaNetwork.yaml
+  #url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml
+  #interval: 43200
 
+# rule 参考示例
+# https://lancellc.gitbook.io/clash/clash-config-file/rules
 rules:
   # MyList
   - DOMAIN-SUFFIX,yande.re,🚀 节点选择

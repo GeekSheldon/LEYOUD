@@ -31,6 +31,8 @@ proxies:
       port: 1080,
     }
 
+# proxy-provider搭配subconverter参考示例
+# https://10101.io/2020/02/12/use-clash-proxy-provider-with-subconverter
 proxy-providers:
   cfw:
     {
@@ -48,6 +50,8 @@ proxy-groups:
       proxies: [Shadowsocks]
     }
 
+# rule参考示例
+# https://lancellc.gitbook.io/clash/clash-config-file/rules
 rules:
   - DOMAIN-SUFFIX,ip6-localhost,Proxy
   - DOMAIN-SUFFIX,ip6-loopback,Proxy
