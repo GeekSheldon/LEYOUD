@@ -398,89 +398,20 @@ rule-providers:
 # rule参考示例
 # https://lancellc.gitbook.io/clash/clash-config-file/rules
 rules:
-  # MyList
-  - DOMAIN-SUFFIX,ip6-localhost,Proxy
-  - DOMAIN-SUFFIX,ip6-loopback,Proxy
-  - DOMAIN-SUFFIX,local,Proxy
-  - DOMAIN-SUFFIX,localhost,Proxy
-  - IP-CIDR,10.0.0.0/8,Proxy,no-resolve
-  - IP-CIDR,100.64.0.0/10,Proxy,no-resolve
-  - IP-CIDR,127.0.0.0/8,Proxy,no-resolve
-  - IP-CIDR,172.16.0.0/12,Proxy,no-resolve
-  - IP-CIDR,192.168.0.0/16,Proxy,no-resolve
-  - IP-CIDR6,::1/128,Proxy,no-resolve
-  - IP-CIDR6,fc00::/7,Proxy,no-resolve
-  - IP-CIDR6,fe80::/10,Proxy,no-resolve
-  - IP-CIDR6,fd00::/8,Proxy,no-resolve
-  - DOMAIN,router.asus.com,Proxy
-  - DOMAIN-SUFFIX,hiwifi.com,Proxy
-  - DOMAIN-SUFFIX,leike.cc,Proxy
-  - DOMAIN-SUFFIX,miwifi.com,Proxy
-  - DOMAIN-SUFFIX,my.router,Proxy
-  - DOMAIN-SUFFIX,p.to,Proxy
-  - DOMAIN-SUFFIX,peiluyou.com,Proxy
-  - DOMAIN-SUFFIX,phicomm.me,Proxy
-  - DOMAIN-SUFFIX,routerlogin.com,Proxy
-  - DOMAIN-SUFFIX,tendawifi.com,Proxy
-  - DOMAIN-SUFFIX,zte.home,Proxy
-  - DOMAIN-SUFFIX,163yun.com,Netease Music
-  - DOMAIN-SUFFIX,api.iplay.163.com,Netease Music
-  - DOMAIN-SUFFIX,hz.netease.com,Netease Music
-  - DOMAIN-SUFFIX,mam.netease.com,Netease Music
-  - DOMAIN-SUFFIX,music.163.com,Netease Music
-  - IP-CIDR,39.105.63.80/32,Netease Music,no-resolve
-  - IP-CIDR,45.254.48.1/32,Netease Music,no-resolve
-  - IP-CIDR,47.100.127.239/32,Netease Music,no-resolve
-  - IP-CIDR,59.111.21.14/31,Netease Music,no-resolve
-  - IP-CIDR,59.111.160.195/32,Netease Music,no-resolve
-  - IP-CIDR,59.111.160.197/32,Netease Music,no-resolve
-  - IP-CIDR,59.111.179.214/32,Netease Music,no-resolve
-  - IP-CIDR,59.111.181.35/32,Netease Music,no-resolve
-  - IP-CIDR,59.111.181.38/32,Netease Music,no-resolve
-  - IP-CIDR,59.111.181.60/32,Netease Music,no-resolve
-  - IP-CIDR,59.111.238.29/32,Netease Music,no-resolve
-  - IP-CIDR,101.71.154.241/32,Netease Music,no-resolve
-  - IP-CIDR,103.126.92.132/31,Netease Music,no-resolve
-  - IP-CIDR,112.13.119.17/32,Netease Music,no-resolve
-  - IP-CIDR,112.13.122.1/32,Netease Music,no-resolve
-  - IP-CIDR,115.236.118.33/32,Netease Music,no-resolve
-  - IP-CIDR,115.236.121.1/32,Netease Music,no-resolve
-  - IP-CIDR,118.24.63.156/32,Netease Music,no-resolve
-  - IP-CIDR,193.112.159.225/32,Netease Music,no-resolve
-  - IP-CIDR,223.252.199.66/31,Netease Music,no-resolve
-  - DOMAIN-SUFFIX,yande.re,Proxy
-  - DOMAIN-SUFFIX,ustravel.cloud,Proxy
-  - DOMAIN-SUFFIX,weblank.xyz,Proxy
-  - DOMAIN-SUFFIX,saucenao.com,Proxy
-  - DOMAIN-SUFFIX,merlinblog.xyz,Proxy
-  - DOMAIN-SUFFIX,playbeasts.com,Proxy
-  - DOMAIN-SUFFIX,proxy.tgbot.co,Proxy
-  - DOMAIN-SUFFIX,blog.skk.moe,Proxy
-  - DOMAIN-SUFFIX,lancellc.gitbook.io,Proxy
-  - DOMAIN-SUFFIX,notion.so,Proxy
-  - DOMAIN-SUFFIX,v2rayssr.com,Proxy
-  - DOMAIN-SUFFIX,18comic.org,Proxy
-  - DOMAIN-SUFFIX,ja.nyahentai.com,Proxy
-  - DOMAIN-SUFFIX,nyahentai.github.io,Proxy
-  - DOMAIN-SUFFIX,miaoshenshi.com,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.site,Proxy
-  - DOMAIN-SUFFIX,zh.doghentai.com,Proxy
-  - DOMAIN-SUFFIX,zh.bughentai.com,Proxy
-  - DOMAIN-SUFFIX,zh.foxhentai.com,Proxy
-  - DOMAIN-SUFFIX,zh.qqhentai.com,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.fun,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.com,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.net,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.org,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.pw,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai3.com,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.co,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.icu,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai4.com,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.club,Proxy
-  - DOMAIN-SUFFIX,zh.cathentai.com,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.cc,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.pro,Proxy
+  # LocalAreaNetwork
+  - DOMAIN-SUFFIX,ip6-localhost,Domestic
+  - DOMAIN-SUFFIX,ip6-loopback,Domestic
+  - DOMAIN-SUFFIX,local,Domestic
+  - DOMAIN-SUFFIX,localhost,Domestic
+  - IP-CIDR,10.0.0.0/8,Domestic,no-resolve
+  - IP-CIDR,100.64.0.0/10,Domestic,no-resolve
+  - IP-CIDR,127.0.0.0/8,Domestic,no-resolve
+  - IP-CIDR,172.16.0.0/12,Domestic,no-resolve
+  - IP-CIDR,192.168.0.0/16,Domestic,no-resolve
+  - IP-CIDR6,::1/128,Domestic,no-resolve
+  - IP-CIDR6,fc00::/7,Domestic,no-resolve
+  - IP-CIDR6,fe80::/10,Domestic,no-resolve
+  - IP-CIDR6,fd00::/8,Domestic,no-resolve
 
   # DivineEngine
   - RULE-SET,Apple,Apple

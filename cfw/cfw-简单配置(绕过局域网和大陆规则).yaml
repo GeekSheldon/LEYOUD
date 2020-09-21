@@ -53,29 +53,29 @@ proxy-groups:
 # rule参考示例
 # https://lancellc.gitbook.io/clash/clash-config-file/rules
 rules:
-  - DOMAIN-SUFFIX,ip6-localhost,Proxy
-  - DOMAIN-SUFFIX,ip6-loopback,Proxy
-  - DOMAIN-SUFFIX,local,Proxy
-  - DOMAIN-SUFFIX,localhost,Proxy
-  - IP-CIDR,10.0.0.0/8,Proxy,no-resolve
-  - IP-CIDR,100.64.0.0/10,Proxy,no-resolve
-  - IP-CIDR,127.0.0.0/8,Proxy,no-resolve
-  - IP-CIDR,172.16.0.0/12,Proxy,no-resolve
-  - IP-CIDR,192.168.0.0/16,Proxy,no-resolve
-  - IP-CIDR6,::1/128,Proxy,no-resolve
-  - IP-CIDR6,fc00::/7,Proxy,no-resolve
-  - IP-CIDR6,fe80::/10,Proxy,no-resolve
-  - IP-CIDR6,fd00::/8,Proxy,no-resolve
-  - DOMAIN,router.asus.com,Proxy
-  - DOMAIN-SUFFIX,hiwifi.com,Proxy
-  - DOMAIN-SUFFIX,leike.cc,Proxy
-  - DOMAIN-SUFFIX,miwifi.com,Proxy
-  - DOMAIN-SUFFIX,my.router,Proxy
-  - DOMAIN-SUFFIX,p.to,Proxy
-  - DOMAIN-SUFFIX,peiluyou.com,Proxy
-  - DOMAIN-SUFFIX,phicomm.me,Proxy
-  - DOMAIN-SUFFIX,routerlogin.com,Proxy
-  - DOMAIN-SUFFIX,tendawifi.com,Proxy
-  - DOMAIN-SUFFIX,zte.home,Proxy
+  - DOMAIN-SUFFIX,ip6-localhost,DIRECT
+  - DOMAIN-SUFFIX,ip6-loopback,DIRECT
+  - DOMAIN-SUFFIX,local,DIRECT
+  - DOMAIN-SUFFIX,localhost,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR6,::1/128,DIRECT,no-resolve
+  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+  - DOMAIN,router.asus.com,DIRECT
+  - DOMAIN-SUFFIX,hiwifi.com,DIRECT
+  - DOMAIN-SUFFIX,leike.cc,DIRECT
+  - DOMAIN-SUFFIX,miwifi.com,DIRECT
+  - DOMAIN-SUFFIX,my.router,DIRECT
+  - DOMAIN-SUFFIX,p.to,DIRECT
+  - DOMAIN-SUFFIX,peiluyou.com,DIRECT
+  - DOMAIN-SUFFIX,phicomm.me,DIRECT
+  - DOMAIN-SUFFIX,routerlogin.com,DIRECT
+  - DOMAIN-SUFFIX,tendawifi.com,DIRECT
+  - DOMAIN-SUFFIX,zte.home,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,Proxy
+  - MATCH,DIRECT

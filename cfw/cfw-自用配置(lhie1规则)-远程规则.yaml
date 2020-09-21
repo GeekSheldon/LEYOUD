@@ -365,12 +365,12 @@ rule-providers:
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Spotify.yaml
     interval: 42300
 
-  # YouTube Music:
-  #   type: http
-  #   behavior: classical
-  #   path: ./providers/lhie1/rules/YouTube_Music.yaml
-  #   url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/YouTube%20Music.yaml
-  #   interval: 42300
+  YouTube Music:
+    type: http
+    behavior: classical
+    path: ./providers/lhie1/rules/YouTube_Music.yaml
+    url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/YouTube%20Music.yaml
+    interval: 42300
 
   YouTube:
     type: http
@@ -400,12 +400,12 @@ rule-providers:
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Letv.yaml
     interval: 42300
 
-  # MOO:
-  #   type: http
-  #   behavior: classical
-  #   path: ./providers/lhie1/rules/MOO.yaml
-  #   url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/MOO.yaml
-  #   interval: 42300
+  MOO:
+    type: http
+    behavior: classical
+    path: ./providers/lhie1/rules/MOO.yaml
+    url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/MOO.yaml
+    interval: 42300
 
   Netease Music:
     type: http
@@ -645,7 +645,7 @@ rule-providers:
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Microsoft.yaml
     interval: 42300
 
-  PROXY:
+  Proxy:
     type: http
     behavior: classical
     path: ./providers/lhie1/rules/Proxy.yaml
@@ -757,7 +757,7 @@ rules:
   - RULE-SET,Speedtest,Speedtest
   - RULE-SET,PayPal,PayPal
   - RULE-SET,Microsoft,Microsoft
-  - RULE-SET,PROXY,Proxy
+  - RULE-SET,Proxy,Proxy
   - RULE-SET,Apple,Apple
   - RULE-SET,Domestic,Domestic
   - RULE-SET,Domestic IPs,Domestic
