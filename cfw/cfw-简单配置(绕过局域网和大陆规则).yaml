@@ -78,4 +78,4 @@ rules:
   - DOMAIN-SUFFIX,tendawifi.com,DIRECT
   - DOMAIN-SUFFIX,zte.home,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,DIRECT
+  - MATCH,Proxy
