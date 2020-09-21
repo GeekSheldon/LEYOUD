@@ -139,7 +139,7 @@ proxy-groups:
      url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
     }
 
-# rule-provider参考示例参考示例
+# rule-provider参考示例
 # https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
 #rule-providers:
   #LocalAreaNetwork:
