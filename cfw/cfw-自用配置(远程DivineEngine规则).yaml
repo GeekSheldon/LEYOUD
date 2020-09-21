@@ -192,6 +192,18 @@ proxy-groups:
       - TW
       - SG
       - KR
+  - name: Microsoft # 微软云盘
+    type: select
+    proxies:
+      - DIRECT
+      - Proxy
+      - Auto
+      - HK
+      - JP
+      - US
+      - TW
+      - SG
+      - KR
   - name: Apple # 苹果服务
     type: select
     proxies:
@@ -405,7 +417,7 @@ rules:
 
   # DivineEngine
   - RULE-SET,Apple,Apple
-  - RULE-SET,OneDrive,Proxy
+  - RULE-SET,OneDrive,Microsoft
   - RULE-SET,PayPal,PayPal
   - RULE-SET,Scholar,Proxy
   - RULE-SET,Telegram,Telegram
