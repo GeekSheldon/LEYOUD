@@ -141,13 +141,13 @@ proxy-groups:
 
 # rule-provider参考示例
 # https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
-#rule-providers:
-  #LocalAreaNetwork:
-  #type: http
-  #behavior: classical # classical/domain/ipcidr
-  #path: ./providers/acl4ssr/rules/LocalAreaNetwork.yaml
-  #url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml
-  #interval: 43200
+# rule-providers:
+#   LocalAreaNetwork:
+#   type: http
+#   behavior: classical # classical/domain/ipcidr
+#   path: ./providers/acl4ssr/rules/LocalAreaNetwork.yaml
+#   url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml
+#   interval: 43200
 
 # rule参考示例
 # https://lancellc.gitbook.io/clash/clash-config-file/rules

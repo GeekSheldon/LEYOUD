@@ -336,13 +336,13 @@ proxy-groups:
 
 # rule-provider参考示例
 # https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
-#rule-providers:
-  #Domestic:
-  #type: http
-  #behavior: classical # classical/domain/ipcidr
-  #path: ./providers/lhie1/rules/Domestic.yaml
-  #url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Domestic.yaml
-  #interval: 43200
+# rule-providers:
+#   Domestic:
+#   type: http
+#   behavior: classical # classical/domain/ipcidr
+#   path: ./providers/lhie1/rules/Domestic.yaml
+#   url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Domestic.yaml
+#   interval: 43200
 
 # rule参考示例
 # https://lancellc.gitbook.io/clash/clash-config-file/rules
