@@ -177,7 +177,7 @@ proxy-groups:
       - TW
       - SG
       - KR
-  - name: Youtube # 油管视频
+  - name: YouTube # 油管视频
     type: select
     proxies:
       - Proxy
