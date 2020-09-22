@@ -35,18 +35,20 @@ proxies:
 # https://10101.io/2020/02/12/use-clash-proxy-provider-with-subconverter
 proxy-providers:
   cfw:
-    type: http, path: ./cfw.yaml, interval: 43200
-    #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=ssr或v2ray订阅链接&list=true
-    url: https://suo.yt/fsCcv39 # 公益节点
-    health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}
+    {
+      type: http, path: ./cfw.yaml, interval: 43200,
+      #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=ssr或v2ray订阅链接&list=true,
+      url: https://suo.yt/fsCcv39, # 公益节点
+      health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}
+    }
 
 proxy-groups:
-  - name: Proxy
-    type: select
-    use:
-      - cfw
-    proxies:
-      - Shadowsocks
+  - {
+      name: Proxy,
+      type: select,
+      use: [cfw],
+      proxies: [Shadowsocks]
+    }
 
 # rule参考示例
 # https://lancellc.gitbook.io/clash/clash-config-file/rules
