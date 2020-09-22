@@ -54,7 +54,7 @@ proxy-providers:
   cfw: # 所有节点
     type: http 
     path: ./providers/acl4ssr/cfw.yaml
-    # url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false
+    #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false
     url: https://suo.yt/fsCcv39 # 公益节点
     interval: 43200
     health-check:
