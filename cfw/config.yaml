@@ -53,7 +53,7 @@ secret: ""
 # 允许启动ipv6
 ipv6: false
 
-# 出站接口名称
+# 出站网卡接口
 # interface-name: en0
 
 # 实验性功能 hosts, 支持通配符 (例如 *.clash.dev 甚至 *.foo.*.example.com)
