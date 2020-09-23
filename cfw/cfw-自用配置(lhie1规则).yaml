@@ -270,7 +270,7 @@ proxy-groups:
       - TW
       - SG
       - KR
-  - name: Microsoft # 微软云盘
+  - name: Microsoft # 微软服务
     type: select
     proxies:
       - DIRECT
