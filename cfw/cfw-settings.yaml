@@ -694,8 +694,3 @@ parsers: # array
       - DOMAIN-SUFFIX,zh.cathentai.com,🚀 节点选择
       - DOMAIN-SUFFIX,zh.nyahentai.cc,🚀 节点选择
       - DOMAIN-SUFFIX,zh.nyahentai.pro,🚀 节点选择
-    append-proxies: # proxies最后面增加服务
-      - name: 解锁网易云灰色歌曲(本地)
-        type: http
-        server: 127.0.0.1
-        port: 16375
