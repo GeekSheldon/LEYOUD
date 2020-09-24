@@ -13,7 +13,7 @@ ipv6: false
 dns:
   enable: true
   ipv6: false
-  listen: 127.0.0.1:53
+  # listen: 127.0.0.1:53
   enhanced-mode: redir-host
   nameserver:
     - 223.6.6.6
@@ -29,8 +29,8 @@ dns:
     - https://dns.google/dns-query
   fallback-filter:
     geoip: true
-    ipcidr:
-      - 240.0.0.0/4
-#interface-name: WLAN # 出站接口名称
-#clash-for-android:
+#     ipcidr:
+#       - 240.0.0.0/4
+# interface-name: WLAN # 出站接口名称
+# clash-for-android:
 #  append-system-dns: true # 追加系统 DNS 到 nameserver
