@@ -17,11 +17,8 @@ dns:
   fallback:
     - 208.67.222.222
     - 208.67.220.220
-    - 208.67.222.220
   fallback-filter:
     geoip: true
-    ipcidr:
-      - 240.0.0.0/4
 
 proxies:
   - {
