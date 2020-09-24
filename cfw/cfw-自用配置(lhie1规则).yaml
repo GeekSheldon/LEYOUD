@@ -224,7 +224,7 @@ proxy-groups:
       - TW
       - SG
       - KR
-  - name: Bilibili # Bilibili
+  - name: AsianTV # 国内媒体
     type: select
     proxies:
       - DIRECT
@@ -236,7 +236,7 @@ proxy-groups:
       - TW
       - SG
       - KR
-  - name: AsianTV # 国内媒体
+  - name: Bilibili # Bilibili
     type: select
     proxies:
       - DIRECT
