@@ -1,0 +1,36 @@
+#---------------------------------------------------#
+# 配置文件参考示例
+# https://github.com/Hackl0us/SS-Rule-Snippet/blob/master/LAZY_RULES/clash.yaml
+#---------------------------------------------------#
+mixed-port: 7890
+redir-port: 7892
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+ipv6: false
+
+dns:
+  enable: true
+  ipv6: false
+  listen: 127.0.0.1:53
+  enhanced-mode: redir-host
+  nameserver:
+    - 223.6.6.6
+    - 223.5.5.5
+    - tls://dns.alidns.com:853
+    - https://dns.alidns.com/dns-query
+    - https://alidns_ip/dns-query
+  fallback:
+    - 208.67.222.222
+    - 208.67.220.220
+    - 208.67.222.220
+    - tls://dns.google:853
+    - https://dns.google/dns-query
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+#interface-name: WLAN # 出站接口名称
+#clash-for-android:
+#  append-system-dns: true # 追加系统 DNS 到 nameserver

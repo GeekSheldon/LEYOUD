@@ -32,6 +32,8 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 #interface-name: WLAN # 出站接口名称
+clash-for-android:
+  append-system-dns: false # 追加系统 DNS 到 nameserver
 
 proxies:
   - {name: 解锁网易云灰色歌曲(本地), type: http, server: 127.0.0.1, port: 16375, username: "", password: "", tls: false, skip-cert-verify: false, udp: false}
@@ -52,92 +54,354 @@ proxies:
 # https://10101.io/2020/02/12/use-clash-proxy-provider-with-subconverter
 proxy-providers:
   cfw: # 所有节点
-    {
-     url: https://suo.yt/fsCcv39, # 公益节点
-     #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false,
-     type: http, path: ./providers/acl4ssr/cfw.yaml, interval: 43200, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}
-    }
+    type: http 
+    path: ./providers/acl4ssr/cfw.yaml
+    #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false
+    url: https://suo.yt/fsCcv39 # 公益节点
+    interval: 43200
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
 
-  # 香港节点
-  #hk: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=HK%7CHongKong%7CHKT%7CHKBN%7CHGC%7CWTT%7CCMI%7C%5B%5E-%5D%E6%B8%AF%7C%E6%B8%AF&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/acl4ssr/hk.yaml, interval: 43220, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
+  #hk: # 香港节点
+    #type: http
+    #path: ./providers/acl4ssr/hk.yaml
+    #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=HK%7CHongKong%7CHKT%7CHKBN%7CHGC%7CWTT%7CCMI%7C%5B%5E-%5D%E6%B8%AF%7C%E6%B8%AF&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false
+    #interval: 43220
+    #health-check:
+      #enable: true
+      #url: http://www.gstatic.com/generate_204
+      #interval: 300
 
-  # 日本节点
-  #jp: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=%E6%97%A5%E6%9C%AC%7C%E5%B7%9D%E6%97%A5%7C%E4%B8%9C%E4%BA%AC%7C%E5%A4%A7%E9%98%AA%7C%E6%B3%89%E6%97%A5%7C%E5%9F%BC%E7%8E%89%7C%E6%B2%AA%E6%97%A5%7C%E6%B7%B1%E6%97%A5%7C%5B%5E-%5D%E6%97%A5%7CJP%7CJapan&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/acl4ssr/jp.yaml, interval: 43240, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
+  #jp: # 日本节点
+    #type: http
+    #path: ./providers/acl4ssr/jp.yaml
+    #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=%E6%97%A5%E6%9C%AC%7C%E5%B7%9D%E6%97%A5%7C%E4%B8%9C%E4%BA%AC%7C%E5%A4%A7%E9%98%AA%7C%E6%B3%89%E6%97%A5%7C%E5%9F%BC%E7%8E%89%7C%E6%B2%AA%E6%97%A5%7C%E6%B7%B1%E6%97%A5%7C%5B%5E-%5D%E6%97%A5%7CJP%7CJapan&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false
+    #interval: 43240
+    #health-check:
+      #enable: true
+      #url: http://www.gstatic.com/generate_204
+      #interval: 300
 
-  # 美国节点
-  #um: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=%E7%BE%8E%7C%E6%B3%A2%E7%89%B9%E5%85%B0%7C%E8%BE%BE%E6%8B%89%E6%96%AF%7C%E4%BF%84%E5%8B%92%E5%86%88%7C%E5%87%A4%E5%87%B0%E5%9F%8E%7C%E8%B4%B9%E5%88%A9%E8%92%99%7C%E7%A1%85%E8%B0%B7%7C%E6%8B%89%E6%96%AF%E7%BB%B4%E5%8A%A0%E6%96%AF%7C%E6%B4%9B%E6%9D%89%E7%9F%B6%7C%E5%9C%A3%E4%BD%95%E5%A1%9E%7C%E5%9C%A3%E5%85%8B%E6%8B%89%E6%8B%89%7C%E8%A5%BF%E9%9B%85%E5%9B%BE%7C%E8%8A%9D%E5%8A%A0%E5%93%A5%7CUS%7CUnited%20States&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/acl4ssr/um.yaml, interval: 43260, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
+  #um: # 美国节点
+    #type: http
+    #path: ./providers/acl4ssr/um.yaml
+    #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=%E7%BE%8E%7C%E6%B3%A2%E7%89%B9%E5%85%B0%7C%E8%BE%BE%E6%8B%89%E6%96%AF%7C%E4%BF%84%E5%8B%92%E5%86%88%7C%E5%87%A4%E5%87%B0%E5%9F%8E%7C%E8%B4%B9%E5%88%A9%E8%92%99%7C%E7%A1%85%E8%B0%B7%7C%E6%8B%89%E6%96%AF%E7%BB%B4%E5%8A%A0%E6%96%AF%7C%E6%B4%9B%E6%9D%89%E7%9F%B6%7C%E5%9C%A3%E4%BD%95%E5%A1%9E%7C%E5%9C%A3%E5%85%8B%E6%8B%89%E6%8B%89%7C%E8%A5%BF%E9%9B%85%E5%9B%BE%7C%E8%8A%9D%E5%8A%A0%E5%93%A5%7CUS%7CUnited%20States&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false
+    #interval: 43260
+    #health-check:
+      #enable: true
+      #url: http://www.gstatic.com/generate_204
+      #interval: 300
 
-  # 台湾节点
-  #cn: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=%E5%8F%B0%7C%E6%96%B0%E5%8C%97%7C%E5%BD%B0%E5%8C%96%7CTW%7CTaiwan&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/acl4ssr/cn.yaml, interval: 43280, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
+  #cn: # 台湾节点
+    #type: http
+    #path: ./providers/acl4ssr/cn.yaml
+    #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=%E5%8F%B0%7C%E6%96%B0%E5%8C%97%7C%E5%BD%B0%E5%8C%96%7CTW%7CTaiwan&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false
+    #interval: 43280
+    #health-check:
+      #enable: true
+      #url: http://www.gstatic.com/generate_204
+      #interval: 300
 
-  # 狮城节点
-  #sg: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=%E6%96%B0%E5%8A%A0%E5%9D%A1%7C%E5%9D%A1%7C%E7%8B%AE%E5%9F%8E%7CSG%7CSingapore&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/acl4ssr/sg.yaml, interval: 43300, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
+  #sg: # 狮城节点
+    #type: http
+    #path: ./providers/acl4ssr/sg.yaml
+    #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=%E6%96%B0%E5%8A%A0%E5%9D%A1%7C%E5%9D%A1%7C%E7%8B%AE%E5%9F%8E%7CSG%7CSingapore&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false
+    #interval: 43300
+    #health-check:
+      #enable: true
+      #url: http://www.gstatic.com/generate_204
+      #interval: 300
 
-  # 韩国节点
-  #kr: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=KR%7CKorea%7CKOR%7C%E9%A6%96%E5%B0%94%7C%E9%9F%A9%7C%E9%9F%93&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/acl4ssr/kr.yaml, interval: 43320, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
+  #kr: # 韩国节点
+    #type: http
+    #path: ./providers/acl4ssr/kr.yaml
+    #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=KR%7CKorea%7CKOR%7C%E9%A6%96%E5%B0%94%7C%E9%9F%A9%7C%E9%9F%93&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false
+    #interval: 43320
+    #health-check:
+      #enable: true
+      #url: http://www.gstatic.com/generate_204
+      #interval: 300
 
-  # 奈飞节点
-  #nf: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=NF%7C%E5%A5%88%E9%A3%9E%7C%E8%A7%A3%E9%94%81%7CNetflix%7CNETFLIX%7CMedia&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/acl4ssr/nf.yaml, interval: 43340, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
+  #nf: # 奈飞节点
+    #type: http
+    #path: ./providers/acl4ssr/nf.yaml
+    #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=NF%7C%E5%A5%88%E9%A3%9E%7C%E8%A7%A3%E9%94%81%7CNetflix%7CNETFLIX%7CMedia&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false
+    #interval: 43340
+    #health-check:
+      #enable: true
+      #url: http://www.gstatic.com/generate_204
+      #interval: 300
 
 proxy-groups:
-  - {name: 🚀 节点选择, type: select, proxies: [🔯 故障转移, ♻️ 自动选择, 🔮 负载均衡, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🚀 手动切换, DIRECT, Shadowsocks]}
-  - {name: 🚀 手动切换, type: select, use: [cfw]}
-  - {name: ♻️ 自动选择, type: url-test, use: [cfw], url: http://www.gstatic.com/generate_204, interval: 300}
-  - {name: 🔯 故障转移, type: fallback, use: [cfw], url: http://www.gstatic.com/generate_204, interval: 300}
-  - {name: 🔮 负载均衡, type: load-balance, use: [cfw], url: http://www.gstatic.com/generate_204, interval: 300}
-  - {name: 📲 电报消息, type: select, proxies: [🚀 节点选择, ♻️ 自动选择, 🇸🇬 狮城节点, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🚀 手动切换]}
-  - {name: 📹 油管视频, type: select, proxies: [🚀 节点选择, ♻️ 自动选择, 🇸🇬 狮城节点, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🚀 手动切换]}
-  - {name: 🎥 奈飞视频, type: select, proxies: [🎥 奈飞节点, 🚀 节点选择, ♻️ 自动选择, 🇸🇬 狮城节点, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🚀 手动切换]}
-  - {name: 📺 巴哈姆特, type: select, proxies: [🇨🇳 台湾节点, 🚀 节点选择, ♻️ 自动选择, 🇸🇬 狮城节点, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🚀 手动切换]}
-  - {name: 🌍 国外媒体, type: select, proxies: [🚀 节点选择, ♻️ 自动选择, 🇸🇬 狮城节点, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🚀 手动切换]}
-  - {name: 🌏 国内媒体, type: select, proxies: [DIRECT, 🚀 节点选择, ♻️ 自动选择, 🇸🇬 狮城节点, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🚀 手动切换]}
-  - {name: 🌏 出海媒体, type: select, proxies: [DIRECT, 🚀 节点选择, ♻️ 自动选择, 🇸🇬 狮城节点, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🚀 手动切换]}
-  - {name: 📢 谷歌FCM, type: select, proxies: [DIRECT, 🚀 节点选择, ♻️ 自动选择, 🇸🇬 狮城节点, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🚀 手动切换]}
-  - {name: Ⓜ️ 微软云盘, type: select, proxies: [DIRECT, 🚀 节点选择, ♻️ 自动选择, 🇸🇬 狮城节点, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🚀 手动切换]}
-  - {name: 🍎 苹果服务, type: select, proxies: [DIRECT, 🚀 节点选择, ♻️ 自动选择, 🇸🇬 狮城节点, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🚀 手动切换]}
-  - {name: 🎮 游戏平台, type: select, proxies: [DIRECT, 🚀 节点选择, ♻️ 自动选择, 🇸🇬 狮城节点, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🚀 手动切换]}
-  - {name: 🎶 网易音乐, type: select, proxies: [DIRECT, 解锁网易云灰色歌曲(本地), 解锁网易云灰色歌曲(在线), 🚀 节点选择, ♻️ 自动选择]}
-  - {name: 🎯 全球直连, type: select, proxies: [DIRECT, 🚀 节点选择, ♻️ 自动选择]}
-  - {name: 🛑 广告拦截, type: select, proxies: [REJECT, DIRECT]}
-  - {name: 🍃 应用净化, type: select, proxies: [REJECT, DIRECT]}
-  - {name: 🆎 AdBlock, type: select, proxies: [REJECT, DIRECT]}
-# - {name: 🛡️ 隐私防护, type: select, proxies: [REJECT, DIRECT]}
-  - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 节点选择, ♻️ 自动选择, DIRECT, 🇸🇬 狮城节点, 🇭🇰 香港节点, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇰🇷 韩国节点, 🚀 手动切换]}
-  - {
-     name: 🇭🇰 香港节点, type: fallback,
-     #use: [hk]
-     url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
-    }
-  - {
-     name: 🇯🇵 日本节点, type: fallback,
-     #use: [jp],
-     url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
-    }
-  - {
-     name: 🇺🇲 美国节点, type: fallback,
-     #use: [um],
-     url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
-    }
-  - {
-     name: 🇨🇳 台湾节点, type: fallback,
-     #use: [cn],
-     url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
-    }
-  - {
-     name: 🇸🇬 狮城节点, type: fallback,
-     #use: [sg],
-     url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
-    }
-  - {
-     name: 🇰🇷 韩国节点, type: fallback,
-     #use: [kr],
-     url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
-    }
-  - {
-     name: 🎥 奈飞节点, type: fallback,
-     #use: [nf],
-     url: http://www.gstatic.com/generate_204, interval: 300, proxies: [Shadowsocks]
-    }
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - 🔯 故障转移
+      - ♻️ 自动选择
+      - 🔮 负载均衡
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+      - Shadowsocks
+  - name: 🚀 手动切换
+    type: select
+    use:
+      - cfw
+  - name: ♻️ 自动选择
+    type: url-test
+    use:
+      - cfw
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+  - name: 🔯 故障转移
+    type: fallback
+    use:
+      - cfw
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+  - name: 🔮 负载均衡
+    type: load-balance
+    use:
+      - cfw
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+  - name: 📲 电报消息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 📹 油管视频
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🎥 奈飞视频
+    type: select
+    proxies:
+      - 🎥 奈飞节点
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 📺 巴哈姆特
+    type: select
+    proxies:
+      - 🇨🇳 台湾节点
+      - 🚀 节点选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  # - name: 🌏 国内媒体
+  #   type: select
+  #   proxies:
+  #     - DIRECT
+  #     - 🚀 节点选择
+  #     - ♻️ 自动选择
+  #     - 🇭🇰 香港节点
+  #     - 🇨🇳 台湾节点
+  #     - 🇸🇬 狮城节点
+  #     - 🇯🇵 日本节点
+  #     - 🇺🇲 美国节点
+  #     - 🇰🇷 韩国节点
+  #     - 🚀 手动切换
+  - name: 🌏 出海媒体
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 📢 谷歌FCM
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🎮 游戏平台
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🎶 网易音乐
+    type: select
+    proxies:
+      - DIRECT
+      - 解锁网易云灰色歌曲(本地)
+      - 解锁网易云灰色歌曲(在线)
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 广告拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🆎 AdBlock
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  # - name: 🛡️ 隐私防护
+  #   type: select
+  #   proxies:
+  #     - REJECT
+  #     - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - DIRECT
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🇭🇰 香港节点
+    type: fallback
+    #use: [hk]
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - Shadowsocks
+  - name: 🇯🇵 日本节点
+    type: fallback
+    #use: [jp]
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - Shadowsocks
+  - name: 🇺🇲 美国节点
+    type: fallback
+    #use: [um]
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - Shadowsocks
+  - name: 🇨🇳 台湾节点
+    type: fallback
+    #use: [cn]
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - Shadowsocks
+  - name: 🇸🇬 狮城节点
+    type: fallback
+    #use: [sg]
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - Shadowsocks
+  - name: 🇰🇷 韩国节点
+    type: fallback
+    #use: [kr]
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - Shadowsocks
+  - name: 🎥 奈飞节点
+    type: fallback
+    #use: [nf]
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - Shadowsocks
 
 # rule-provider参考示例
 # https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
@@ -247,11 +511,11 @@ rule-providers:
     url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Netflix.yaml
     interval: 43200
 
-  OneDrive:
+  Microsoft:
     type: http
     behavior: classical
-    path: ./providers/acl4ssr/rules/OneDrive.yaml
-    url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/OneDrive.yaml
+    path: ./providers/acl4ssr/rules/Microsoft.yaml
+    url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Microsoft.yaml
     interval: 43200
 
   ProxyGFWlist:
@@ -350,7 +614,7 @@ rules:
   - RULE-SET,BanEasyListChina,🆎 AdBlock
   - RULE-SET,GoogleFCM,📢 谷歌FCM
   - RULE-SET,GoogleCN,🎯 全球直连
-  - RULE-SET,OneDrive,Ⓜ️ 微软云盘
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
   - RULE-SET,Apple,🍎 苹果服务
   - RULE-SET,Telegram,📲 电报消息
   - RULE-SET,NetEaseMusic,🎶 网易音乐
