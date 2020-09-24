@@ -612,6 +612,7 @@ mixin: # object
     enhanced-mode: redir-host
     fake-ip-range: 198.18.0.1/16
     fake-ip-filter:
+      - localhost.ptlogin2.qq.com
       - dns.msftncsi.com
       - www.msftncsi.com
       - www.msftconnecttest.com
