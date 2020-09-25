@@ -728,46 +728,17 @@ rule-providers:
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Domestic%20IPs.yaml
     interval: 43200
 
+  MyList:
+    type: http
+    behavior: classical
+    path: ./providers/lhie1/rules/MyList.yaml
+    url: https://raw.githubusercontent.com/Leyoud/LEYOUD/master/cfw/MyList.yaml
+    interval: 43200
+
 # rule参考示例
 # https://lancellc.gitbook.io/clash/clash-config-file/rules
 rules:
-  # MyList
-  - DOMAIN-SUFFIX,yande.re,Proxy
-  - DOMAIN-SUFFIX,ustravel.cloud,Proxy
-  - DOMAIN-SUFFIX,weblank.xyz,Proxy
-  - DOMAIN-SUFFIX,saucenao.com,Proxy
-  - DOMAIN-SUFFIX,merlinblog.xyz,Proxy
-  - DOMAIN-SUFFIX,playbeasts.com,Proxy
-  - DOMAIN-SUFFIX,proxy.tgbot.co,Proxy
-  - DOMAIN-SUFFIX,blog.skk.moe,Proxy
-  - DOMAIN-SUFFIX,lancellc.gitbook.io,Proxy
-  - DOMAIN-SUFFIX,notion.so,Proxy
-  - DOMAIN-SUFFIX,v2rayssr.com,Proxy
-  - DOMAIN-SUFFIX,18comic.org,Proxy
-  - DOMAIN-SUFFIX,ja.nyahentai.com,Proxy
-  - DOMAIN-SUFFIX,nyahentai.github.io,Proxy
-  - DOMAIN-SUFFIX,miaoshenshi.com,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.site,Proxy
-  - DOMAIN-SUFFIX,zh.doghentai.com,Proxy
-  - DOMAIN-SUFFIX,zh.bughentai.com,Proxy
-  - DOMAIN-SUFFIX,zh.foxhentai.com,Proxy
-  - DOMAIN-SUFFIX,zh.qqhentai.com,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.fun,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.com,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.net,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.org,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.pw,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai3.com,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.co,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.icu,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai4.com,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.club,Proxy
-  - DOMAIN-SUFFIX,zh.cathentai.com,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.cc,Proxy
-  - DOMAIN-SUFFIX,zh.nyahentai.pro,Proxy
-  - DOMAIN-SUFFIX,v2fly.org,Proxy
-
-  # lhie1
+  - RULE-SET,MyList,Proxy
   - RULE-SET,Reject,AdBlock
   - RULE-SET,Special,DIRECT
   - RULE-SET,Netflix,Netflix
