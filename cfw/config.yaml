@@ -158,7 +158,7 @@ proxies:
       name: Shadowsocks,
       server: 127.0.0.1,
       port: 1080,
-      type: http,
+      type: socks5,
       username: "",
       password: "",
       tls: false,
