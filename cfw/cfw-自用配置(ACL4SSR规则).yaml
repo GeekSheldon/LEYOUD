@@ -567,6 +567,13 @@ rule-providers:
     url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/YouTube.yaml
     interval: 43200
 
+  MyList:
+    type: http
+    behavior: classical
+    path: ./providers/acl4ssr/rules/MyList.yaml
+    url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/YouTube.yaml
+    interval: 43200
+
 # rule参考示例
 # https://lancellc.gitbook.io/clash/clash-config-file/rules
 rules:
@@ -604,6 +611,7 @@ rules:
   - DOMAIN-SUFFIX,zh.cathentai.com,🚀 节点选择
   - DOMAIN-SUFFIX,zh.nyahentai.cc,🚀 节点选择
   - DOMAIN-SUFFIX,zh.nyahentai.pro,🚀 节点选择
+  - DOMAIN-SUFFIX,v2fly.org,🚀 节点选择
 
   # ACL4SSR
   - RULE-SET,LocalAreaNetwork,🎯 全球直连

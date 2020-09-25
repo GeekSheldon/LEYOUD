@@ -656,41 +656,3 @@ processes: # array
       windowsHide: true
       #detached: true # 子进程独立于其父进程运行
       #shell: true # 则在 shell 中运行 command
-
-parsers: # array
-- url: https://example.com/profile.yaml
-  yaml:
-    prepend-rules: # rules最前面增加规则
-      - DOMAIN-SUFFIX,yande.re,🚀 节点选择
-      - DOMAIN-SUFFIX,ustravel.cloud,🚀 节点选择
-      - DOMAIN-SUFFIX,weblank.xyz,🚀 节点选择
-      - DOMAIN-SUFFIX,saucenao.com,🚀 节点选择
-      - DOMAIN-SUFFIX,merlinblog.xyz,🚀 节点选择
-      - DOMAIN-SUFFIX,playbeasts.com,🚀 节点选择
-      - DOMAIN-SUFFIX,proxy.tgbot.co,🚀 节点选择
-      - DOMAIN-SUFFIX,blog.skk.moe,🚀 节点选择
-      - DOMAIN-SUFFIX,lancellc.gitbook.io,🚀 节点选择
-      - DOMAIN-SUFFIX,notion.so,🚀 节点选择
-      - DOMAIN-SUFFIX,v2rayssr.com,🚀 节点选择
-      - DOMAIN-SUFFIX,18comic.org,🚀 节点选择
-      - DOMAIN-SUFFIX,ja.nyahentai.com,🚀 节点选择
-      - DOMAIN-SUFFIX,nyahentai.github.io,🚀 节点选择
-      - DOMAIN-SUFFIX,miaoshenshi.com,🚀 节点选择
-      - DOMAIN-SUFFIX,zh.nyahentai.site,🚀 节点选择
-      - DOMAIN-SUFFIX,zh.doghentai.com,🚀 节点选择
-      - DOMAIN-SUFFIX,zh.bughentai.com,🚀 节点选择
-      - DOMAIN-SUFFIX,zh.foxhentai.com,🚀 节点选择
-      - DOMAIN-SUFFIX,zh.qqhentai.com,🚀 节点选择
-      - DOMAIN-SUFFIX,zh.nyahentai.fun,🚀 节点选择
-      - DOMAIN-SUFFIX,zh.nyahentai.com,🚀 节点选择
-      - DOMAIN-SUFFIX,zh.nyahentai.net,🚀 节点选择
-      - DOMAIN-SUFFIX,zh.nyahentai.org,🚀 节点选择
-      - DOMAIN-SUFFIX,zh.nyahentai.pw,🚀 节点选择
-      - DOMAIN-SUFFIX,zh.nyahentai3.com,🚀 节点选择
-      - DOMAIN-SUFFIX,zh.nyahentai.co,🚀 节点选择
-      - DOMAIN-SUFFIX,zh.nyahentai.icu,🚀 节点选择
-      - DOMAIN-SUFFIX,zh.nyahentai4.com,🚀 节点选择
-      - DOMAIN-SUFFIX,zh.nyahentai.club,🚀 节点选择
-      - DOMAIN-SUFFIX,zh.cathentai.com,🚀 节点选择
-      - DOMAIN-SUFFIX,zh.nyahentai.cc,🚀 节点选择
-      - DOMAIN-SUFFIX,zh.nyahentai.pro,🚀 节点选择
