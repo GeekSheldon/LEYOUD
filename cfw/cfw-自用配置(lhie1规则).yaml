@@ -749,7 +749,7 @@ rules:
   - RULE-SET,iQiyi,AsianTV
   - RULE-SET,Letv,AsianTV
   #  - RULE-SET,MOO,AsianTV
-  - RULE-SET,Netease Music,AsianTV
+  - RULE-SET,Netease Music,Netease Music
   - RULE-SET,Tencent Video,AsianTV
   - RULE-SET,Youku,AsianTV
   - RULE-SET,ABC,GlobalTV
