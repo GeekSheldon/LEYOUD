@@ -134,6 +134,16 @@ proxy-providers:
       #url: http://www.gstatic.com/generate_204
       #interval: 300
 
+  #cg: # 游戏节点
+    #type: http
+    #path: ./providers/lhie1/cg.yaml
+    #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=IEPL%7CIPLC%7C%E6%B8%B8%E6%88%8F&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false
+    #interval: 43360
+    #health-check:
+      #enable: true
+      #url: http://www.gstatic.com/generate_204
+      #interval: 300
+
 proxy-groups:
   - name: Proxy # 代理网站
     type: select
@@ -236,7 +246,7 @@ proxy-groups:
       - TW
       - SG
       - KR
-  - name: Bilibili # Bilibili
+  - name: Bilibili # 哔哩哔哩
     type: select
     proxies:
       - DIRECT
@@ -302,6 +312,7 @@ proxy-groups:
       - DIRECT
       - Proxy
       - Auto
+      - CG
       - HK
       - JP
       - US
@@ -382,10 +393,13 @@ proxy-groups:
     proxies:
       - Shadowsocks
   - name: NF # 奈飞节点
-    type: fallback
+    type: select
     #use: [nf]
-    url: http://www.gstatic.com/generate_204
-    interval: 300
+    proxies:
+      - Shadowsocks
+  - name: CG # 游戏节点
+    type: select
+    #use: [cg]
     proxies:
       - Shadowsocks
 
