@@ -5,32 +5,19 @@ payload:
   - DOMAIN-SUFFIX,saucenao.com
   - DOMAIN-SUFFIX,merlinblog.xyz
   - DOMAIN-SUFFIX,playbeasts.com
-  - DOMAIN-SUFFIX,proxy.tgbot.co
-  - DOMAIN-SUFFIX,blog.skk.moe
-  - DOMAIN-SUFFIX,lancellc.gitbook.io
+  - DOMAIN-SUFFIX,tgbot.co
+  - DOMAIN-SUFFIX,skk.moe
+  - DOMAIN-SUFFIX,gitbook.io
   - DOMAIN-SUFFIX,notion.so
   - DOMAIN-SUFFIX,v2rayssr.com
   - DOMAIN-SUFFIX,18comic.org
   - DOMAIN-SUFFIX,18comic.vip
-  - DOMAIN-SUFFIX,ja.nyahentai.com
-  - DOMAIN-SUFFIX,nyahentai.github.io
+  - DOMAIN-KEYWORD,nyahentai
   - DOMAIN-SUFFIX,miaoshenshi.com
-  - DOMAIN-SUFFIX,zh.nyahentai.site
-  - DOMAIN-SUFFIX,zh.doghentai.com
-  - DOMAIN-SUFFIX,zh.bughentai.com
-  - DOMAIN-SUFFIX,zh.foxhentai.com
-  - DOMAIN-SUFFIX,zh.qqhentai.com
-  - DOMAIN-SUFFIX,zh.nyahentai.fun
-  - DOMAIN-SUFFIX,zh.nyahentai.com
-  - DOMAIN-SUFFIX,zh.nyahentai.net
-  - DOMAIN-SUFFIX,zh.nyahentai.org
-  - DOMAIN-SUFFIX,zh.nyahentai.pw
-  - DOMAIN-SUFFIX,zh.nyahentai3.com
-  - DOMAIN-SUFFIX,zh.nyahentai.co
-  - DOMAIN-SUFFIX,zh.nyahentai.icu
-  - DOMAIN-SUFFIX,zh.nyahentai4.com
-  - DOMAIN-SUFFIX,zh.nyahentai.club
-  - DOMAIN-SUFFIX,zh.cathentai.com
-  - DOMAIN-SUFFIX,zh.nyahentai.cc
-  - DOMAIN-SUFFIX,zh.nyahentai.pro
+  - DOMAIN-SUFFIX,doghentai.com
+  - DOMAIN-SUFFIX,bughentai.com
+  - DOMAIN-SUFFIX,foxhentai.com
+  - DOMAIN-SUFFIX,qqhentai.com
+  - DOMAIN-SUFFIX,cathentai.com
   - DOMAIN-SUFFIX,v2fly.org
+  - DOMAIN-SUFFIX,donmai.us
