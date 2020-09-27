@@ -703,21 +703,21 @@ rule-providers:
     type: http
     behavior: classical
     path: ./providers/rules/BilibiliHMT.yaml
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/BilibiliHMT.yaml
+    url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/BilibiliHMT.yaml
     interval: 43200
 
   Epic:
     type: http
     behavior: classical
     path: ./providers/rules/Epic.yaml
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Epic.yaml
+    url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Epic.yaml
     interval: 43200
 
   Sony:
     type: http
     behavior: classical
     path: ./providers/rules/Sony.yaml
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Epic.yaml
+    url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Epic.yaml
     interval: 43200
 
   MyList:
