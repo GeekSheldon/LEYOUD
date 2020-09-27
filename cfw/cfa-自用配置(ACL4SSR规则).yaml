@@ -3,7 +3,6 @@
 # 配置文件参考示例 https://github.com/Hackl0us/SS-Rule-Snippet/blob/master/LAZY_RULES/clash.yaml
 #---------------------------------------------------#
 mixed-port: 7890
-redir-port: 7892
 allow-lan: true
 mode: Rule
 log-level: info
@@ -13,7 +12,6 @@ ipv6: false
 dns:
   enable: true
   ipv6: false
-  listen: 127.0.0.1:53
   enhanced-mode: redir-host
   nameserver:
     - 223.6.6.6
@@ -31,9 +29,8 @@ dns:
     geoip: true
     ipcidr:
       - 240.0.0.0/4
-#interface-name: WLAN # 出站接口名称
 clash-for-android:
-  append-system-dns: false # 追加系统 DNS 到 nameserver
+  append-system-dns: true # 追加系统 DNS 到 nameserver
 
 proxies:
   - {name: 解锁网易云灰色歌曲(本地), type: http, server: 127.0.0.1, port: 16375, username: "", password: "", tls: false, skip-cert-verify: false, udp: false}
@@ -54,7 +51,7 @@ proxies:
 # https://10101.io/2020/02/12/use-clash-proxy-provider-with-subconverter
 proxy-providers:
   cfw: # 所有节点
-    type: http 
+    type: http
     path: ./providers/ACL4SSR/cfw.yaml
     #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false
     url: https://suo.yt/fsCcv39 # 公益节点
@@ -133,16 +130,6 @@ proxy-providers:
       #enable: true
       #url: http://www.gstatic.com/generate_204
       #interval: 300
-    
-  #cg: # 游戏节点
-    #type: http
-    #path: ./providers/ACL4SSR/cg.yaml
-    #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=IEPL%7CIPLC%7C%E6%B8%B8%E6%88%8F&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false
-    #interval: 43200
-    #health-check:
-      #enable: true
-      #url: http://www.gstatic.com/generate_204
-      #interval: 300
 
 proxy-groups:
   - name: 🚀 节点选择
@@ -182,30 +169,6 @@ proxy-groups:
       - cfw
     url: http://www.gstatic.com/generate_204
     interval: 300
-  - name: 📲 电报消息
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🇸🇬 狮城节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-  - name: 📹 油管视频
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🇸🇬 狮城节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
   - name: 🎥 奈飞视频
     type: select
     proxies:
@@ -215,17 +178,6 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-  - name: 📺 巴哈姆特
-    type: select
-    proxies:
-      - 🇨🇳 台湾节点
-      - 🚀 节点选择
-      - 🇸🇬 狮城节点
-      - 🇭🇰 香港节点
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇰🇷 韩国节点
@@ -242,19 +194,6 @@ proxy-groups:
       - 🇺🇲 美国节点
       - 🇰🇷 韩国节点
       - 🚀 手动切换
-  # - name: 🌏 国内媒体
-  #   type: select
-  #   proxies:
-  #     - DIRECT
-  #     - 🚀 节点选择
-  #     - ♻️ 自动选择
-  #     - 🇭🇰 香港节点
-  #     - 🇨🇳 台湾节点
-  #     - 🇸🇬 狮城节点
-  #     - 🇯🇵 日本节点
-  #     - 🇺🇲 美国节点
-  #     - 🇰🇷 韩国节点
-  #     - 🚀 手动切换
   - name: 🌏 出海媒体
     type: select
     proxies:
@@ -280,36 +219,11 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
       - 🚀 手动切换
-  - name: Ⓜ️ 微软服务
+  - name: Ⓜ️ 微软云盘
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - 🇺🇲 美国节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-  - name: 🍎 苹果服务
-    type: select
-    proxies:
-      - DIRECT
-      - 🚀 节点选择
-      - 🇺🇲 美国节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-  - name: 🎮 游戏平台
-    type: select
-    proxies:
-      - DIRECT
-      - 🚀 节点选择
-      - 🎮 游戏节点
       - 🇺🇲 美国节点
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
@@ -321,7 +235,6 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - 解锁网易云灰色歌曲(本地)
       - 解锁网易云灰色歌曲(在线)
       - 🚀 节点选择
       - ♻️ 自动选择
@@ -331,26 +244,11 @@ proxy-groups:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
-  - name: 🛑 广告拦截
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🍃 应用净化
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
   - name: 🆎 AdBlock
     type: select
     proxies:
       - REJECT
       - DIRECT
-  # - name: 🛡️ 隐私防护
-  #   type: select
-  #   proxies:
-  #     - REJECT
-  #     - DIRECT
   - name: 🐟 漏网之鱼
     type: select
     proxies:
@@ -411,36 +309,10 @@ proxy-groups:
     #use: [nf]
     proxies:
       - Shadowsocks
-  - name: 🎮 游戏节点
-    type: select
-    #use: [cg]
-    proxies:
-      - Shadowsocks
 
 # rule-provider参考示例
 # https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
 rule-providers:
-  Apple:
-    type: http
-    behavior: classical
-    path: ./providers/acl4ssr/rules/Apple.yaml
-    url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Apple.yaml
-    interval: 43200
-
-  Bahamut:
-    type: http
-    behavior: classical
-    path: ./providers/acl4ssr/rules/Bahamut.yaml
-    url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Bahamut.yaml
-    interval: 43200
-
-  BanAD:
-    type: http
-    behavior: classical
-    path: ./providers/acl4ssr/rules/BanAD.yaml
-    url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
-    interval: 43200
-
   BanEasyList:
     type: http
     behavior: classical
@@ -453,13 +325,6 @@ rule-providers:
     behavior: classical
     path: ./providers/acl4ssr/rules/BanEasyListChina.yaml
     url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyListChina.yaml
-    interval: 43200
-
-  BanProgramAD:
-    type: http
-    behavior: classical
-    path: ./providers/acl4ssr/rules/BanProgramAD.yaml
-    url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/BanProgramAD.yaml
     interval: 43200
 
   BilibiliHMT:
@@ -481,13 +346,6 @@ rule-providers:
     behavior: classical
     path: ./providers/acl4ssr/rules/ChinaDomain.yaml
     url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml
-    interval: 43200
-
-  Epic:
-    type: http
-    behavior: classical
-    path: ./providers/acl4ssr/rules/Epic.yaml
-    url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Epic.yaml
     interval: 43200
 
   GoogleCN:
@@ -525,11 +383,11 @@ rule-providers:
     url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Netflix.yaml
     interval: 43200
 
-  Microsoft:
+  OneDrive:
     type: http
     behavior: classical
     path: ./providers/acl4ssr/rules/Microsoft.yaml
-    url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Microsoft.yaml
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/OneDrive.yaml
     interval: 43200
 
   ProxyGFWlist:
@@ -546,39 +404,11 @@ rule-providers:
     url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyMedia.yaml
     interval: 43200
 
-  Sony:
-    type: http
-    behavior: classical
-    path: ./providers/acl4ssr/rules/Sony.yaml
-    url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Sony.yaml
-    interval: 43200
-
-  Steam:
-    type: http
-    behavior: classical
-    path: ./providers/acl4ssr/rules/Steam.yaml
-    url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Steam.yaml
-    interval: 43200
-
-  Telegram:
-    type: http
-    behavior: classical
-    path: ./providers/acl4ssr/rules/Telegram.yaml
-    url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Telegram.yaml
-    interval: 43200
-
   UnBan:
     type: http
     behavior: classical
     path: ./providers/acl4ssr/rules/UnBan.yaml
     url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/UnBan.yaml
-    interval: 43200
-
-  YouTube:
-    type: http
-    behavior: classical
-    path: ./providers/acl4ssr/rules/YouTube.yaml
-    url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/YouTube.yaml
     interval: 43200
 
   MyList:
@@ -594,22 +424,13 @@ rules:
   - RULE-SET,MyList,🚀 节点选择
   - RULE-SET,LocalAreaNetwork,🎯 全球直连
   - RULE-SET,UnBan,🎯 全球直连
-  - RULE-SET,BanAD,🛑 广告拦截
-  - RULE-SET,BanProgramAD,🍃 应用净化
   - RULE-SET,BanEasyList,🆎 AdBlock
   - RULE-SET,BanEasyListChina,🆎 AdBlock
   - RULE-SET,GoogleFCM,📢 谷歌FCM
   - RULE-SET,GoogleCN,🎯 全球直连
-  - RULE-SET,Microsoft,Ⓜ️ 微软服务
-  - RULE-SET,Apple,🍎 苹果服务
-  - RULE-SET,Telegram,📲 电报消息
+  - RULE-SET,OneDrive,Ⓜ️ 微软云盘
   - RULE-SET,NetEaseMusic,🎶 网易音乐
-  - RULE-SET,Epic,🎮 游戏平台
-  - RULE-SET,Sony,🎮 游戏平台
-  - RULE-SET,Steam,🎮 游戏平台
-  - RULE-SET,YouTube,📹 油管视频
   - RULE-SET,Netflix,🎥 奈飞视频
-  - RULE-SET,Bahamut,📺 巴哈姆特
   - RULE-SET,ProxyMedia,🌍 国外媒体
   - RULE-SET,BilibiliHMT,🌏 出海媒体
   - DOMAIN,cache.video.iqiyi.com,🌏 出海媒体
