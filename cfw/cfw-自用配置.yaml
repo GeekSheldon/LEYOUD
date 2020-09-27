@@ -731,22 +731,13 @@ rule-providers:
 # https://lancellc.gitbook.io/clash/clash-config-file/rules
 rules:
   - RULE-SET,MyList,Proxy
-  - RULE-SET,Reject,AdBlock
-  - RULE-SET,Special,DIRECT
-  - RULE-SET,LocalAreaNetwork,DIRECT
+  - RULE-SET,Special,Domestic
+  - RULE-SET,LocalAreaNetwork,Domestic
+  - RULE-SET,Telegram,Telegram
   - RULE-SET,Netflix,Netflix
   - RULE-SET,Spotify,Spotify
   #  - RULE-SET,YouTube Music,YouTube
   - RULE-SET,YouTube,YouTube
-  - RULE-SET,Netease Music,Netease Music
-  - RULE-SET,BilibiliHMT,Maritime media
-  - DOMAIN,cache.video.iqiyi.com,Maritime media
-  - RULE-SET,Bilibili,AsianTV
-  - RULE-SET,iQiyi,AsianTV
-  - RULE-SET,Letv,AsianTV
-  #  - RULE-SET,MOO,AsianTV
-  - RULE-SET,Tencent Video,AsianTV
-  - RULE-SET,Youku,AsianTV
   - RULE-SET,ABC,GlobalTV
   - RULE-SET,Abema TV,GlobalTV
   - RULE-SET,Amazon,GlobalTV
@@ -773,15 +764,24 @@ rules:
   - RULE-SET,Pornhub,GlobalTV
   - RULE-SET,Soundcloud,GlobalTV
   - RULE-SET,ViuTV,GlobalTV
-  - RULE-SET,Telegram,Telegram
+  - RULE-SET,BilibiliHMT,Maritime media
+  - DOMAIN,cache.video.iqiyi.com,Maritime media
+  - RULE-SET,Bilibili,AsianTV
+  - RULE-SET,iQiyi,AsianTV
+  - RULE-SET,Letv,AsianTV
+  #  - RULE-SET,MOO,AsianTV
+  - RULE-SET,Tencent Video,AsianTV
+  - RULE-SET,Youku,AsianTV
   - RULE-SET,Steam,Computer Game
   - RULE-SET,Epic,Computer Game
   - RULE-SET,Sony,Computer Game
   - RULE-SET,Speedtest,Speedtest
   - RULE-SET,PayPal,PayPal
   - RULE-SET,Microsoft,Microsoft
+  - RULE-SET,Netease Music,Netease Music
   - RULE-SET,Proxy,Proxy
   - RULE-SET,Apple,Apple
+  - RULE-SET,Reject,AdBlock
   - RULE-SET,Domestic,Domestic
   - RULE-SET,Domestic IPs,Domestic
   - GEOIP,CN,Domestic
