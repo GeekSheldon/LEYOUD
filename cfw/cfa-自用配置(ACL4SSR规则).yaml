@@ -218,7 +218,19 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
       - 🚀 手动切换
-  - name: Ⓜ️ 微软云盘
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🍎 苹果服务
     type: select
     proxies:
       - DIRECT
@@ -382,11 +394,18 @@ rule-providers:
     url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Netflix.yaml
     interval: 43200
 
-  OneDrive:
+  Microsoft:
     type: http
     behavior: classical
     path: ./providers/acl4ssr/rules/Microsoft.yaml
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/OneDrive.yaml
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Microsoft.yaml
+    interval: 43200
+
+  Apple:
+    type: http
+    behavior: classical
+    path: ./providers/acl4ssr/rules/Apple.yaml
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Apple.yaml
     interval: 43200
 
   ProxyGFWlist:
@@ -427,7 +446,8 @@ rules:
   - RULE-SET,BanEasyListChina,🆎 AdBlock
   - RULE-SET,GoogleFCM,📢 谷歌FCM
   - RULE-SET,GoogleCN,🎯 全球直连
-  - RULE-SET,OneDrive,Ⓜ️ 微软云盘
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Apple,🍎 苹果服务
   - RULE-SET,NetEaseMusic,🎶 网易音乐
   - RULE-SET,Netflix,🎥 奈飞视频
   - RULE-SET,ProxyMedia,🌍 国外媒体
