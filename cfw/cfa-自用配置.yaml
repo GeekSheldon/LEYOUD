@@ -1,5 +1,5 @@
 #---------------------------------------------------#
-# ACL4SSR规则地址 https://github.com/ACL4SSR/ACL4SSR
+# 规则参考地址 https://github.com/ACL4SSR/ACL4SSR
 # 配置文件参考示例 https://github.com/Hackl0us/SS-Rule-Snippet/blob/master/LAZY_RULES/clash.yaml
 #---------------------------------------------------#
 mixed-port: 7890
