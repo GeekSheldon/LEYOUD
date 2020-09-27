@@ -1,5 +1,5 @@
 #---------------------------------------------------#
-# lhie1规则地址 https://github.com/lhie1/Rules
+# 大佬们的规则 https://github.com/DivineEngine/Profiles https://github.com/ACL4SSR/ACL4SSR https://github.com/lhie1/Rules
 # 配置文件参考示例 https://github.com/Hackl0us/SS-Rule-Snippet/blob/master/LAZY_RULES/clash.yaml
 #---------------------------------------------------#
 mixed-port: 7890
@@ -53,34 +53,34 @@ proxies:
 proxy-providers:
   cfw: # 所有节点
     {
-      type: http, path: ./providers/lhie1/cfw.yaml, interval: 43200,
+      type: http, path: ./providers/cfw.yaml, interval: 43200,
       #url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false,
       url: https://suo.yt/fsCcv39, # 公益节点
       health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}
     }
   ## 香港节点
-  #hk: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=HK%7CHongKong%7CHKT%7CHKBN%7CHGC%7CWTT%7CCMI%7C%5B%5E-%5D%E6%B8%AF%7C%E6%B8%AF&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/lhie1/hk.yaml, interval: 43220, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
+  #hk: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=HK%7CHongKong%7CHKT%7CHKBN%7CHGC%7CWTT%7CCMI%7C%5B%5E-%5D%E6%B8%AF%7C%E6%B8%AF&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/hk.yaml, interval: 43220, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
 
   ## 日本节点
-  #jp: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=%E6%97%A5%E6%9C%AC%7C%E5%B7%9D%E6%97%A5%7C%E4%B8%9C%E4%BA%AC%7C%E5%A4%A7%E9%98%AA%7C%E6%B3%89%E6%97%A5%7C%E5%9F%BC%E7%8E%89%7C%E6%B2%AA%E6%97%A5%7C%E6%B7%B1%E6%97%A5%7C%5B%5E-%5D%E6%97%A5%7CJP%7CJapan&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/lhie1/jp.yaml, interval: 43220, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
+  #jp: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=%E6%97%A5%E6%9C%AC%7C%E5%B7%9D%E6%97%A5%7C%E4%B8%9C%E4%BA%AC%7C%E5%A4%A7%E9%98%AA%7C%E6%B3%89%E6%97%A5%7C%E5%9F%BC%E7%8E%89%7C%E6%B2%AA%E6%97%A5%7C%E6%B7%B1%E6%97%A5%7C%5B%5E-%5D%E6%97%A5%7CJP%7CJapan&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/jp.yaml, interval: 43220, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
 
   ## 美国节点
-  #us: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=%E7%BE%8E%7C%E6%B3%A2%E7%89%B9%E5%85%B0%7C%E8%BE%BE%E6%8B%89%E6%96%AF%7C%E4%BF%84%E5%8B%92%E5%86%88%7C%E5%87%A4%E5%87%B0%E5%9F%8E%7C%E8%B4%B9%E5%88%A9%E8%92%99%7C%E7%A1%85%E8%B0%B7%7C%E6%8B%89%E6%96%AF%E7%BB%B4%E5%8A%A0%E6%96%AF%7C%E6%B4%9B%E6%9D%89%E7%9F%B6%7C%E5%9C%A3%E4%BD%95%E5%A1%9E%7C%E5%9C%A3%E5%85%8B%E6%8B%89%E6%8B%89%7C%E8%A5%BF%E9%9B%85%E5%9B%BE%7C%E8%8A%9D%E5%8A%A0%E5%93%A5%7CUS%7CUnited%20States&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/lhie1/us.yaml, interval: 43220, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
+  #us: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=%E7%BE%8E%7C%E6%B3%A2%E7%89%B9%E5%85%B0%7C%E8%BE%BE%E6%8B%89%E6%96%AF%7C%E4%BF%84%E5%8B%92%E5%86%88%7C%E5%87%A4%E5%87%B0%E5%9F%8E%7C%E8%B4%B9%E5%88%A9%E8%92%99%7C%E7%A1%85%E8%B0%B7%7C%E6%8B%89%E6%96%AF%E7%BB%B4%E5%8A%A0%E6%96%AF%7C%E6%B4%9B%E6%9D%89%E7%9F%B6%7C%E5%9C%A3%E4%BD%95%E5%A1%9E%7C%E5%9C%A3%E5%85%8B%E6%8B%89%E6%8B%89%7C%E8%A5%BF%E9%9B%85%E5%9B%BE%7C%E8%8A%9D%E5%8A%A0%E5%93%A5%7CUS%7CUnited%20States&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/us.yaml, interval: 43220, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
 
   ## 台湾节点
-  #tw: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=%E5%8F%B0%7C%E6%96%B0%E5%8C%97%7C%E5%BD%B0%E5%8C%96%7CTW%7CTaiwan&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/lhie1/tw.yaml, interval: 43220, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
+  #tw: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=%E5%8F%B0%7C%E6%96%B0%E5%8C%97%7C%E5%BD%B0%E5%8C%96%7CTW%7CTaiwan&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/tw.yaml, interval: 43220, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
 
   ## 狮城节点
-  #sg: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=%E6%96%B0%E5%8A%A0%E5%9D%A1%7C%E5%9D%A1%7C%E7%8B%AE%E5%9F%8E%7CSG%7CSingapore&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/lhie1/sg.yaml, interval: 43220, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
+  #sg: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=%E6%96%B0%E5%8A%A0%E5%9D%A1%7C%E5%9D%A1%7C%E7%8B%AE%E5%9F%8E%7CSG%7CSingapore&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/sg.yaml, interval: 43220, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
 
   ## 韩国节点
-  #kr: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=KR%7CKorea%7CKOR%7C%E9%A6%96%E5%B0%94%7C%E9%9F%A9%7C%E9%9F%93&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/lhie1/kr.yaml, interval: 43220, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
+  #kr: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=KR%7CKorea%7CKOR%7C%E9%A6%96%E5%B0%94%7C%E9%9F%A9%7C%E9%9F%93&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/kr.yaml, interval: 43220, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
 
   ## 奈飞节点
-  #nf: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=NF%7C%E5%A5%88%E9%A3%9E%7C%E8%A7%A3%E9%94%81%7CNetflix%7CNETFLIX%7CMedia&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/lhie1/nf.yaml, interval: 43220, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
+  #nf: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=NF%7C%E5%A5%88%E9%A3%9E%7C%E8%A7%A3%E9%94%81%7CNetflix%7CNETFLIX%7CMedia&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/nf.yaml, interval: 43220, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
 
   ## 游戏节点
-  #cg: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=IEPL%7CIPLC%7C%E6%B8%B8%E6%88%8F&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/lhie1/cg.yaml, interval: 43220, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
+  #cg: {url: https://subcon.py6.pw/sub?target=clash&new_name=true&url=编码后的订阅链接1%7C编码后的订阅链接2&insert=false&include=IEPL%7CIPLC%7C%E6%B8%B8%E6%88%8F&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/cg.yaml, interval: 43220, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
 
 proxy-groups:
   - name: Proxy # 代理网站
@@ -150,6 +150,18 @@ proxy-groups:
       - TW
       - SG
       - KR
+  - name: Bahamut # 巴哈姆特
+    type: select
+    proxies:
+      - TW
+      - Proxy
+      - Auto
+      - HK
+      - JP
+      - US
+      - TW
+      - SG
+      - KR
   - name: Spotify # Spotify音乐
     type: select
     proxies:
@@ -184,7 +196,7 @@ proxy-groups:
       - TW
       - SG
       - KR
-  - name: Bilibili # 哔哩哔哩
+  - name: Maritime media # 港澳台媒体
     type: select
     proxies:
       - DIRECT
@@ -244,7 +256,7 @@ proxy-groups:
       - TW
       - SG
       - KR
-  - name: Steam # Steam平台
+  - name: Computer Game # 游戏平台
     type: select
     proxies:
       - DIRECT
@@ -347,343 +359,371 @@ rule-providers:
   Reject:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Reject.yaml
+    path: ./providers/rules/Reject.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Reject.yaml
     interval: 43200
 
   Special:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Special.yaml
+    path: ./providers/rules/Special.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Special.yaml
     interval: 43200
 
   Netflix:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Netflix.yaml
+    path: ./providers/rules/Netflix.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Netflix.yaml
     interval: 43200
 
   Spotify:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Spotify.yaml
+    path: ./providers/rules/Spotify.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Spotify.yaml
     interval: 43200
 
   # YouTube Music:
   #   type: http
   #   behavior: classical
-  #   path: ./providers/lhie1/rules/YouTube_Music.yaml
+  #   path: ./providers/rules/YouTube_Music.yaml
   #   url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/YouTube%20Music.yaml
   #   interval: 43200
 
   YouTube:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/YouTube.yaml
+    path: ./providers/rules/YouTube.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/YouTube.yaml
     interval: 43200
 
   Bilibili:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Bilibili.yaml
+    path: ./providers/rules/Bilibili.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Bilibili.yaml
     interval: 43200
 
   iQiyi:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/iQiyi.yaml
+    path: ./providers/rules/iQiyi.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/iQiyi.yaml
     interval: 43200
 
   Letv:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Letv.yaml
+    path: ./providers/rules/Letv.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Letv.yaml
     interval: 43200
 
   # MOO:
   #   type: http
   #   behavior: classical
-  #   path: ./providers/lhie1/rules/MOO.yaml
+  #   path: ./providers/rules/MOO.yaml
   #   url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/MOO.yaml
   #   interval: 43200
 
   Netease Music:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Netease_Music.yaml
+    path: ./providers/rules/Netease_Music.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Netease%20Music.yaml
     interval: 43200
 
   Tencent Video:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Tencent_Video.yaml
+    path: ./providers/rules/Tencent_Video.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Tencent%20Video.yaml
     interval: 43200
 
   Youku:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Youku.yaml
+    path: ./providers/rules/Youku.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Youku.yaml
     interval: 43200
 
   ABC:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/ABC.yaml
+    path: ./providers/rules/ABC.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/ABC.yaml
     interval: 43200
 
   Abema TV:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Abema_TV.yaml
+    path: ./providers/rules/Abema_TV.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Abema%20TV.yaml
     interval: 43200
 
   Amazon:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Amazon.yaml
+    path: ./providers/rules/Amazon.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Amazon.yaml
     interval: 43200
 
   Apple News:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Apple_News.yaml
+    path: ./providers/rules/Apple_News.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Apple%20News.yaml
     interval: 43200
 
   Apple TV:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Apple_TV.yaml
+    path: ./providers/rules/Apple_TV.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Apple%20TV.yaml
     interval: 43200
 
   Bahamut:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Bahamut.yaml
+    path: ./providers/rules/Bahamut.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Bahamut.yaml
     interval: 43200
 
   BBC iPlayer:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/BBC_iPlayer.yaml
+    path: ./providers/rules/BBC_iPlayer.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/BBC%20iPlayer.yaml
     interval: 43200
 
   DAZN:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/DAZN.yaml
+    path: ./providers/rules/DAZN.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/DAZN.yaml
     interval: 43200
 
   Disney Plus:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Disney_Plus.yaml
+    path: ./providers/rules/Disney_Plus.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Disney%20Plus.yaml
     interval: 43200
 
   encoreTVB:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/encoreTVB.yaml
+    path: ./providers/rules/encoreTVB.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/encoreTVB.yaml
     interval: 43200
 
   Fox Now:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Fox_Now.yaml
+    path: ./providers/rules/Fox_Now.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Fox%20Now.yaml
     interval: 43200
 
   Fox+:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Fox+.yaml
+    path: ./providers/rules/Fox+.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Fox%2B.yaml
     interval: 43200
 
   HBO:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/HBO.yaml
+    path: ./providers/rules/HBO.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/HBO.yaml
     interval: 43200
 
   Hulu Japan:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Hulu_Japan.yaml
+    path: ./providers/rules/Hulu_Japan.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Hulu%20Japan.yaml
     interval: 43200
 
   Hulu:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Hulu.yaml
+    path: ./providers/rules/Hulu.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Hulu.yaml
     interval: 43200
 
   Japonx:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Japonx.yaml
+    path: ./providers/rules/Japonx.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Japonx.yaml
     interval: 43200
 
   JOOX:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/JOOX.yaml
+    path: ./providers/rules/JOOX.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/JOOX.yaml
     interval: 43200
 
   KKBOX:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/KKBOX.yaml
+    path: ./providers/rules/KKBOX.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/KKBOX.yaml
     interval: 43200
 
   KKTV:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/KKTV.yaml
+    path: ./providers/rules/KKTV.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/KKTV.yaml
     interval: 43200
 
   Line TV:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Line_TV.yaml
+    path: ./providers/rules/Line_TV.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Line%20TV.yaml
     interval: 43200
 
   myTV SUPER:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/myTV_SUPER.yaml
+    path: ./providers/rules/myTV_SUPER.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/myTV%20SUPER.yaml
     interval: 43200
 
   Pandora:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Pandora.yaml
+    path: ./providers/rules/Pandora.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Pandora.yaml
     interval: 43200
 
   PBS:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/PBS.yaml
+    path: ./providers/rules/PBS.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/PBS.yaml
     interval: 43200
 
   Pornhub:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Pornhub.yaml
+    path: ./providers/rules/Pornhub.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Pornhub.yaml
     interval: 43200
 
   Soundcloud:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Soundcloud.yaml
+    path: ./providers/rules/Soundcloud.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Soundcloud.yaml
     interval: 43200
 
   ViuTV:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/ViuTV.yaml
+    path: ./providers/rules/ViuTV.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/ViuTV.yaml
     interval: 43200
 
   Telegram:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Telegram.yaml
+    path: ./providers/rules/Telegram.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Telegram.yaml
     interval: 43200
     
   Steam:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Steam.yaml
+    path: ./providers/rules/Steam.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Steam.yaml
     interval: 43200
 
   Speedtest:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Speedtest.yaml
+    path: ./providers/rules/Speedtest.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Speedtest.yaml
     interval: 43200
 
   PayPal:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/PayPal.yaml
+    path: ./providers/rules/PayPal.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/PayPal.yaml
     interval: 43200
 
   Microsoft:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Microsoft.yaml
+    path: ./providers/rules/Microsoft.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Microsoft.yaml
     interval: 43200
 
   Proxy:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Proxy.yaml
+    path: ./providers/rules/Proxy.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Proxy.yaml
     interval: 43200
 
   Domestic:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Domestic.yaml
+    path: ./providers/rules/Domestic.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Domestic.yaml
     interval: 43200
 
   Apple:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/Apple.yaml
+    path: ./providers/rules/Apple.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Apple.yaml
     interval: 43200
 
   Domestic IPs:
     type: http
     behavior: ipcidr
-    path: ./providers/lhie1/rules/Domestic_IPs.yaml
+    path: ./providers/rules/Domestic_IPs.yaml
     url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Domestic%20IPs.yaml
+    interval: 43200
+  
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    path: ./providers/rules/LocalAreaNetwork.yaml
+    url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml
+    interval: 43200
+
+  BilibiliHMT:
+    type: http
+    behavior: classical
+    path: ./providers/rules/BilibiliHMT.yaml
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/BilibiliHMT.yaml
+    interval: 43200
+
+  Epic:
+    type: http
+    behavior: classical
+    path: ./providers/rules/Epic.yaml
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Epic.yaml
+    interval: 43200
+
+  Sony:
+    type: http
+    behavior: classical
+    path: ./providers/rules/Sony.yaml
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Epic.yaml
     interval: 43200
 
   MyList:
     type: http
     behavior: classical
-    path: ./providers/lhie1/rules/MyList.yaml
+    path: ./providers/rules/MyList.yaml
     url: https://git.dler.io/Leyoud/LEYOUD/master/cfw/MyList.yaml
     interval: 43200
 
@@ -693,15 +733,18 @@ rules:
   - RULE-SET,MyList,Proxy
   - RULE-SET,Reject,AdBlock
   - RULE-SET,Special,DIRECT
+  - RULE-SET,LocalAreaNetwork,DIRECT
   - RULE-SET,Netflix,Netflix
   - RULE-SET,Spotify,Spotify
   #  - RULE-SET,YouTube Music,YouTube
   - RULE-SET,YouTube,YouTube
-  - RULE-SET,Bilibili,Bilibili
+  - RULE-SET,Netease Music,Netease Music
+  - RULE-SET,BilibiliHMT,Maritime media
+  - DOMAIN,cache.video.iqiyi.com,Maritime media
+  - RULE-SET,Bilibili,AsianTV
   - RULE-SET,iQiyi,AsianTV
   - RULE-SET,Letv,AsianTV
   #  - RULE-SET,MOO,AsianTV
-  - RULE-SET,Netease Music,Netease Music
   - RULE-SET,Tencent Video,AsianTV
   - RULE-SET,Youku,AsianTV
   - RULE-SET,ABC,GlobalTV
@@ -709,7 +752,7 @@ rules:
   - RULE-SET,Amazon,GlobalTV
   - RULE-SET,Apple News,GlobalTV
   - RULE-SET,Apple TV,GlobalTV
-  - RULE-SET,Bahamut,GlobalTV
+  - RULE-SET,Bahamut,Bahamut
   - RULE-SET,BBC iPlayer,GlobalTV
   - RULE-SET,DAZN,GlobalTV
   - RULE-SET,Disney Plus,GlobalTV
@@ -731,7 +774,9 @@ rules:
   - RULE-SET,Soundcloud,GlobalTV
   - RULE-SET,ViuTV,GlobalTV
   - RULE-SET,Telegram,Telegram
-  - RULE-SET,Steam,Steam
+  - RULE-SET,Steam,Computer Game
+  - RULE-SET,Epic,Computer Game
+  - RULE-SET,Sony,Computer Game
   - RULE-SET,Speedtest,Speedtest
   - RULE-SET,PayPal,PayPal
   - RULE-SET,Microsoft,Microsoft
