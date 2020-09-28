@@ -431,7 +431,7 @@ rule-providers:
     url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyMedia.yaml
     interval: 43200
 
-  # 国内媒体 # 此列规则已存在于下列 “全球直连列表 'ChinaDomain'” 中，可删除
+  # 国内媒体
   # Start
   Bilibili:
     type: http
@@ -610,7 +610,7 @@ rule-providers:
     url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyListChina.yaml
     interval: 43200
 
-  BanProgramAD: # 可能有轻微副作用，如有影响可删除
+  BanProgramAD:
     type: http
     behavior: classical
     path: ./providers/rules/BanProgramAD.yaml
