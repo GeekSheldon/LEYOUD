@@ -723,7 +723,7 @@ rule-providers:
     type: http
     behavior: classical
     path: ./providers/rules/MyList.yaml
-    url: https://git.dler.io/Leyoud/Rules/master/MyList.yaml
+    url: https://git.dler.io/Leyoud/LEYOUD/master/cfw/MyList.yaml
     interval: 43200
 
 # rule参考示例
