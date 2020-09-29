@@ -88,7 +88,7 @@ proxy-groups:
     use:
       - cfw
     proxies:
-      - FallBack
+      - Fallback
       - Auto
       - LoadBalance
       - HK
