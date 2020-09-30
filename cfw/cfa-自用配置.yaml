@@ -456,7 +456,7 @@ rules:
   - RULE-SET,ProxyGFWlist,🚀 节点选择
   - RULE-SET,ChinaDomain,🎯 全球直连
   - RULE-SET,ChinaCompanyIp,🎯 全球直连
-  - DOMAIN-SUFFIX,smtp,🎯 全球直连
-  - DOMAIN-KEYWORD,aria2,🎯 全球直连
+  - PROCESS-NAME,com.xunleidownloadprovider,🎯 全球直连
+  - PROCESS-NAME,com.android.vending,🚀 节点选择
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
