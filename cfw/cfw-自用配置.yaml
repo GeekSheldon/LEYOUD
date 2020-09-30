@@ -629,8 +629,6 @@ rule-providers:
 # https://lancellc.gitbook.io/clash/clash-config-file/rules
 rules:
   - RULE-SET,LocalAreaNetwork,DIRECT
-  - DOMAIN,clash.razord.top,DIRECT
-  - DOMAIN,yacd.haishan.me,DIRECT
   - RULE-SET,BanAD,AdBlock
   - RULE-SET,BanEasyList,AdBlock
   - RULE-SET,BanEasyListChina,AdBlock
