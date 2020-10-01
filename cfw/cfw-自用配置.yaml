@@ -429,7 +429,7 @@ rule-providers:
     type: http
     behavior: classical
     path: ./providers/rules/Bilibili.yaml
-    url: https://git.dler.io/lhie1/Rules/master/Clash/Provider/Media/Bilibili.yaml
+    url: https://git.dler.io/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Bilibili.yaml
     interval: 43200
 
   iQiyi:
