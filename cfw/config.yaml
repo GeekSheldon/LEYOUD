@@ -1,8 +1,7 @@
 #---------------------------------------------------#
-# 配置文件需要放置在 $HOME/.config/clash/config.yaml或者运行目录下的config.yaml
-# 配置文件参考示例 https://github.com/Hackl0us/SS-Rule-Snippet/blob/master/LAZY_RULES/clash.yaml
+# 配置文件需要放置在 $HOME/.config/clash/config.yaml
+# 或者运行目录下的config.yaml
 #---------------------------------------------------#
-
 # 混合端口 HTTP和SOCKS5用一个端口
 mixed-port: 7890
 
@@ -176,8 +175,6 @@ proxy-groups:
     type: select
     proxies:
       - Shadowsocks
-# rule 参考示例
-# https://lancellc.gitbook.io/clash/clash-config-file/rules
 rules:
   - DOMAIN-SUFFIX,163yun.com,🎵 Netease Music
   - DOMAIN-SUFFIX,api.iplay.163.com,🎵 Netease Music
