@@ -103,6 +103,7 @@ proxy-groups:
     type: url-test
     use:
       - cfw
+    tolerance: 150
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: Fallback # 故障转移
