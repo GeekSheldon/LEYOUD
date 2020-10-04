@@ -275,7 +275,6 @@ proxy-groups:
       - DIRECT
       - Proxy
       - Auto
-      - CG
       - HK
       - JP
       - US
@@ -307,13 +306,13 @@ proxy-groups:
       - Proxy
       - Auto
       - DIRECT
-      - CG
       - HK
       - JP
       - US
       - TW
       - SG
       - KR
+      - CG
   - name: HK # 香港节点
     type: fallback
     #use: [hk]
