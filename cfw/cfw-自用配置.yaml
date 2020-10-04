@@ -80,9 +80,6 @@ proxy-providers:
   ## 奈飞节点
   #nf: {url: https://subcon.dlj.tf/sub?target=clash&new_name=true&url=订阅链接1%7C订阅链接2%7C订阅链接++...&insert=false&include=NF%7C%E5%A5%88%E9%A3%9E%7C%E8%A7%A3%E9%94%81%7CNetflix%7CNETFLIX%7CMedia&emoji=true&list=true&udp=false&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/nf.yaml, interval: 43220, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
 
-  ## 游戏节点
-  #cg: {url: https://subcon.dlj.tf/sub?target=clash&new_name=true&url=订阅链接1%7C订阅链接2%7C订阅链接++...&insert=false&include=IEPL%7CIPLC%7C%E6%B8%B8%E6%88%8F&emoji=true&list=true&udp=true&tfo=false&scv=false&fdn=false&sort=false, type: http, path: ./providers/cg.yaml, interval: 43220, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 300}}
-
 proxy-groups:
   - name: Proxy # 代理服务
     type: select
@@ -312,7 +309,6 @@ proxy-groups:
       - TW
       - SG
       - KR
-      - CG
   - name: HK # 香港节点
     type: fallback
     #use: [hk]
@@ -358,11 +354,6 @@ proxy-groups:
   - name: NF # 奈飞节点
     type: select
     #use: [nf]
-    proxies:
-      - Shadowsocks
-  - name: CG # 游戏节点
-    type: select
-    #use: [cg]
     proxies:
       - Shadowsocks
 
