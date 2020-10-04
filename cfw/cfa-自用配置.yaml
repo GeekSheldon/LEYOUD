@@ -455,7 +455,7 @@ rules:
   - DOMAIN,cache.video.iqiyi.com,🌏 出海媒体
   - RULE-SET,ProxyGFWlist,🚀 节点选择
   - RULE-SET,ChinaDomain,🎯 全球直连
-  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连,no-resolve
   - PROCESS-NAME,com.xunleidownloadprovider,🎯 全球直连
   - PROCESS-NAME,com.android.vending,🚀 节点选择
   - GEOIP,CN,🎯 全球直连
