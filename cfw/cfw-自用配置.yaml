@@ -307,6 +307,7 @@ proxy-groups:
       - Proxy
       - Auto
       - DIRECT
+      - CG
       - HK
       - JP
       - US
