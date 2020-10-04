@@ -663,7 +663,7 @@ rules:
   - RULE-SET,Scholar,Domestic
   - RULE-SET,UnBan,Domestic
   - RULE-SET,ChinaDomain,Domestic
-  - RULE-SET,ChinaCompanyIp,Domestic
+  - RULE-SET,ChinaCompanyIp,Domestic,no-resolve
   - PROCESS-NAME,aria2c,Domestic
   - PROCESS-NAME,fdm,Domestic
   - PROCESS-NAME,qbittorrent,Domestic
