@@ -99,8 +99,9 @@ proxy-groups:
   - name: Auto # 自动切换
     type: url-test
     tolerance: 150
-    use:
-      - cfw
+    #use: [cfw]
+    proxies:
+      - Shadowsocks
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: Fallback # 故障转移
