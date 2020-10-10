@@ -617,11 +617,17 @@ rule-providers:
     interval: 43200
 
 rules:
-  - RULE-SET,LocalAreaNetwork,DIRECT
   - RULE-SET,BanAD,AdBlock
   - RULE-SET,BanEasyList,AdBlock
   - RULE-SET,BanEasyListChina,AdBlock
   - RULE-SET,BanProgramAD,AdBlock
+  - RULE-SET,LocalAreaNetwork,DIRECT
+  - PROCESS-NAME,fdm.exe,DIRECT
+  - PROCESS-NAME,qbittorrent.exe,DIRECT
+  - PROCESS-NAME,DownloadService.exe,DIRECT
+  - PROCESS-NAME,baidunetdisk.exe,DIRECT
+  - PROCESS-NAME,aria2c.exe,DIRECT
+  - PROCESS-NAME,AriaNg.exe,DIRECT
   - RULE-SET,Telegram,Telegram
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Netflix,Netflix
@@ -651,10 +657,5 @@ rules:
   - RULE-SET,UnBan,Domestic
   - RULE-SET,ChinaDomain,Domestic
   - RULE-SET,ChinaCompanyIp,Domestic,no-resolve
-  - PROCESS-NAME,aria2c,Domestic
-  - PROCESS-NAME,fdm,Domestic
-  - PROCESS-NAME,qbittorrent,Domestic
-  - PROCESS-NAME,DownloadService,Domestic
-  - PROCESS-NAME,baidunetdisk,Domestic
   - GEOIP,CN,Domestic
   - MATCH,Others
