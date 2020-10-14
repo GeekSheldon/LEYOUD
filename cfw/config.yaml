@@ -38,10 +38,10 @@ secret: ""
 
 # 您可以将静态网页资源（如 clash-dashboard）放置在一个目录中，clash 将会服务于 `RESTful API/ui`
 # 参数应填写配置目录的相对路径或绝对路径。
-# http://127.0.0.1:9090/ui/#/
+# http://127.0.0.1:9090/ui
 # external-ui: folder
-# yacd面板：  https://github.com/haishanh/yacd
-# Razord面板：http://clash.razord.top/#/proxies
+# yacd面板：  http://yacd.haishan.me
+# Razord面板：http://clash.razord.top
 # external-ui: dashboard
 
 # 本地 SOCKS5 / HTTP(S) 服务认证
