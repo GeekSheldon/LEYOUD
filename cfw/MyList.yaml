@@ -8,6 +8,7 @@ payload:
   - DOMAIN-SUFFIX,tgbot.co
   - DOMAIN-SUFFIX,skk.moe
   - DOMAIN-SUFFIX,gitbook.io
+  - DOMAIN-SUFFIX,gitbook.com
   - DOMAIN-SUFFIX,notion.so
   - DOMAIN-SUFFIX,v2rayssr.com
   - DOMAIN-SUFFIX,18comic.org
