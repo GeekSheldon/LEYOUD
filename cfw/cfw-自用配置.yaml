@@ -1,6 +1,6 @@
 #---------------------------------------------------#
-# Clash使用手册
-# https://lancellc.gitbook.io
+# Clash使用手册 https://lancellc.gitbook.io
+# clash在线面板 http://yacd.haishan.me http://clash.razord.top
 #---------------------------------------------------#
 mixed-port: 7890
 redir-port: 7892
