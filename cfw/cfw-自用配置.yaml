@@ -1,6 +1,6 @@
 #---------------------------------------------------#
 # Clash使用手册
-# https://lancellc.gitbook.io/clash
+# https://lancellc.gitbook.io
 #---------------------------------------------------#
 mixed-port: 7890
 redir-port: 7892
