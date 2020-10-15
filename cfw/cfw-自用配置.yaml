@@ -350,10 +350,12 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
   - name: NF # 奈飞节点
-    type: select
+    type: fallback
     #use: [nf]
     proxies:
       - Shadowsocks
+    url: http://www.gstatic.com/generate_204
+    interval: 300
 
 # 规则参考地址
 # https://github.com/ACL4SSR/ACL4SSR https://github.com/lhie1/Rules
