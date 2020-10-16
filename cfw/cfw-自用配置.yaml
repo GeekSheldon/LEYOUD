@@ -186,7 +186,7 @@ proxy-groups:
       - TW
       - SG
       - KR
-  - name: MaritimeMedia # 港澳台媒体
+  - name: HMTMedia # 港澳台媒体
     type: select
     proxies:
       - DIRECT
@@ -630,8 +630,8 @@ rules:
   - RULE-SET,Bahamut,Bahamut
   - RULE-SET,Spotify,Spotify
   - RULE-SET,ProxyMedia,GlobalTV
-  - RULE-SET,BilibiliHMT,MaritimeMedia
-  - DOMAIN,cache.video.iqiyi.com,MaritimeMedia
+  - RULE-SET,BilibiliHMT,HMTMedia
+  - DOMAIN,cache.video.iqiyi.com,HMTMedia
   - RULE-SET,Bilibili,AsianTV
   - RULE-SET,iQiyi,AsianTV
   - RULE-SET,Letv,AsianTV
