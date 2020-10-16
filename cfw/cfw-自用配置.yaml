@@ -73,6 +73,7 @@ proxy-groups:
       - Fallback
       - Auto
       - LoadBalance
+      - Relay
       - HK
       - JP
       - US
@@ -80,6 +81,7 @@ proxy-groups:
       - SG
       - KR
       - Shadowsocks
+      - DIRECT
   - name: Auto # 自动切换
     type: url-test
     tolerance: 150
@@ -102,6 +104,10 @@ proxy-groups:
       - Shadowsocks
     url: http://www.gstatic.com/generate_204
     interval: 300
+  - name: Relay # 链式代理
+    type: relay
+    proxies:
+      - Shadowsocks
   - name: Telegram # 电报消息
     type: select
     proxies:
