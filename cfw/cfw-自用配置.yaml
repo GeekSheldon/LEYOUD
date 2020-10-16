@@ -30,7 +30,7 @@ proxies:
 # - {name: ss2, server: server, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: password, plugin: obfs, plugin-opts: {mode: tls, host: bing.com}}
 # - {name: ss3, server: server, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: password, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: bing.com, path: /, headers: {custom: value}, tls: false, mux: false, skip-cert-verify: false}}
 # - {name: vmess, server: server, port: 443, type: vmess, uuid: uuid, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /path, ws-headers: {Host: v2ray.com}, udp: false}
-# - {name: vmess-http, server: server, port: 443, type: vmess, uuid: uuid, alterId: 32, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/, /video], headers: {Host: [server], Connection: [keep-alive]}}, udp: false}
+# - {name: vmess-http, server: server, port: 443, type: vmess, uuid: uuid, alterId: 32, cipher: auto, network: http, http-opts: {method: GET, path: [/, /video], headers: {Host: [server], Connection: [keep-alive]}}, udp: false}
 # - {name: socks, type: socks5, server: server, port: 443, username: username, password :password, tls: false, skip-cert-verify: false, udp: false}
 # - {name: http, server: server, port: 443, type: http, username: username, password: password, tls: false, skip-cert-verify: false}
 # - {name: snell, server: server, port: 44046, type: snell, psk: yourpsk, obfs-opts: "", mode: http, host: bing.com}
