@@ -653,6 +653,6 @@ rules:
   - RULE-SET,Scholar,Domestic
   - RULE-SET,UnBan,Domestic
   - RULE-SET,ChinaDomain,Domestic
-  - RULE-SET,ChinaCompanyIp,Domestic,no-resolve
+  - RULE-SET,ChinaCompanyIp,Domestic
   - GEOIP,CN,Domestic
   - MATCH,Others
