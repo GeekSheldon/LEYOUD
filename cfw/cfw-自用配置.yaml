@@ -18,9 +18,8 @@ hosts: {}
 dns:
   {
     enable: true, ipv6: false, listen: 127.0.0.1:53, enhanced-mode: redir-host,
-    nameserver: [223.6.6.6, 223.5.5.5, tls://dns.alidns.com:853, https://dns.alidns.com/dns-query, https://alidns_ip/dns-query],
-    fallback: [208.67.222.222, 208.67.220.220, 208.67.222.220, tls://dns.google:853, https://dns.google/dns-query],
-    fallback-filter: {geoip: true}
+    nameserver: [223.6.6.6, 223.5.5.5],
+    fallback: [208.67.222.222, 208.67.220.220, 208.67.222.220]
   }
 
 proxies:
