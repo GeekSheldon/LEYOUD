@@ -27,16 +27,17 @@ proxies:
   - {name: 解锁网易云灰色歌曲(本地), type: http, server: 127.0.0.1, port: 16375, username: "", password: "", tls: false, skip-cert-verify: false}
   - {name: 解锁网易云灰色歌曲(在线), type: http, server: 106.15.250.108, port: 30000, username: "", password: "", tls: false, skip-cert-verify: false}
   - {name: Debug, type: socks5, server: 127.0.0.1, port: 1080, username: "", password: "", tls: false, skip-cert-verify: false, udp: false}
-# - {name: ss1, type: ss, server: server, port: 443, cipher: chacha20-ietf-poly1305, password: password, udp: false}
+# - {name: ss1, type: ss, server: server, port: 443, cipher: chacha20-ietf-poly1305, password: password, udp: true}
 # - {name: ss2, type: ss, server: server, port: 443, cipher: chacha20-ietf-poly1305, password: password, plugin: obfs, plugin-opts: {mode: tls, host: bing.com}}
-# - {name: ss3, type: ss, server: server, port: 443, cipher: chacha20-ietf-poly1305, password: password, plugin: v2ray-plugin, plugin-opts: {mode: websocket, tls: false, skip-cert-verify: false, host: bing.com, path: /, mux: false, headers: {custom: value}}}
-# - {name: vmess, type: vmess, server: server, port: 443, uuid: uuid, alterId: 32, cipher: auto, udp: false, tls: false, skip-cert-verify: false, servername: example.com, network: ws,ws-path: /path, ws-headers: {Host: v2ray.com}}
-# - {name: vmess-http, type: vmess, server: server, port: 443, uuid: uuid, alterId: 32, cipher: auto, udp: false, network: http, http-opts: {method: GET, path: [/, /video], headers: {Connection: [keep-alive]}}}
-# - {name: socks, type: socks5, server: server, port: 443, username: username, password: password, tls: false, skip-cert-verify: false, udp: false}
-# - {name: http, type: http, server: server, port: 443, username: username, password: password, tls: false, skip-cert-verify: false}
-# - {name: snell, type: snell, server: server, port: 44046, psk: yourpsk, obfs-opts: {mode: http, host: bing.com}}
-# - {name: trojan, type: trojan, server: server, port: 443, password: yourpsk, udp: false, sni: example.com, alpn: [h2, http/1.1], skip-cert-verify: false}
-# - {name: ssr, type: ssr, server: server, port: 443, cipher: chacha20-ietf, password: password, obfs: tls1.2_ticket_auth, protocol: auth_sha1_v4, obfs-param: domain.tld, protocol-param: dd:cc, udp: false}
+# - {name: ss3, type: ss, server: server, port: 443, cipher: chacha20-ietf-poly1305, password: password, plugin: v2ray-plugin, plugin-opts: {mode: websocket, tls: true, skip-cert-verify: true, host: bing.com, path: /, mux: true, headers: {custom: value}}}
+# - {name: vmess, type: vmess, server: server, port: 443, uuid: uuid, alterId: 32, cipher: auto, udp: true, tls: true, skip-cert-verify: true, servername: example.com, network: ws,ws-path: /path, ws-headers: {Host: v2ray.com}}
+# - {name: vmess-h2, type: vmess, server: server, port: 443, uuid: uuid, alterId: 32, cipher: auto, network: h2, tls: true, h2-opts: {host:[http.example.com, http-alt.example.com], path: /}}
+# - {name: vmess-http, type: vmess, server: server, port: 443, uuid: uuid, alterId: 32, cipher: auto, udp: true, network: http, http-opts: {method: GET, path: [/, /video], headers: {Connection: [keep-alive]}}}
+# - {name: socks, type: socks5, server: server, port: 443, username: username, password: password, tls: true, skip-cert-verify: true, udp: true}
+# - {name: http, type: http, server: server, port: 443, username: username, password: password, tls: true, skip-cert-verify: true}
+# - {name: snell, type: snell, server: server, port: 44046, psk: yourpsk, version: 2, obfs-opts: {mode: http, host: bing.com}}
+# - {name: trojan, type: trojan, server: server, port: 443, password: yourpsk, udp: true, sni: example.com, alpn: [h2, http/1.1], skip-cert-verify: true}
+# - {name: ssr, type: ssr, server: server, port: 443, cipher: chacha20-ietf, password: password, obfs: tls1.2_ticket_auth, protocol: auth_sha1_v4, obfs-param: domain.tld, protocol-param: dd:cc, udp: true}
 
 # proxy-provider搭配subconverter使用教程
 # https://10101.io/2020/02/12/use-clash-proxy-provider-with-subconverter
