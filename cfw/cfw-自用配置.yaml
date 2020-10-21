@@ -82,7 +82,6 @@ proxy-groups:
       - SG
       - KR
       - Debug
-      - DIRECT
   - name: Auto # 自动切换
     type: url-test
     tolerance: 150
