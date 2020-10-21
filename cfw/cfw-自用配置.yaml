@@ -624,6 +624,7 @@ rules:
   - RULE-SET,BanAD,AdBlock
   - RULE-SET,BanEasyList,AdBlock
   - RULE-SET,BanEasyListChina,AdBlock
+  - RULE-SET,BanEasyPrivacy,AdBlock
   - RULE-SET,BanProgramAD,AdBlock
   - RULE-SET,LocalAreaNetwork,DIRECT
   - PROCESS-NAME,fdm.exe,DIRECT
