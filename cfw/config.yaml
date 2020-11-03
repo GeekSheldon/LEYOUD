@@ -27,7 +27,7 @@ dns:
 
 proxies:
   - {name: 解锁网易云灰色歌曲(本地), type: http, server: 127.0.0.1, port: 16375, username: "", password: "", tls: false, skip-cert-verify: false}
-  - {name: 解锁网易云灰色歌曲(在线), type: http, server: 106.15.250.108, port: 30000, username: "", password: "", tls: false, skip-cert-verify: false}
+  - {name: 解锁网易云灰色歌曲(在线), server: music.desperadoj.com, port: 30001, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_emx2}
   - {name: Debug, type: socks5, server: 127.0.0.1, port: 1080, username: "", password: "", tls: false, skip-cert-verify: false, udp: false}
 # - {name: ss1, type: ss, server: server, port: 443, cipher: chacha20-ietf-poly1305, password: password, udp: true}
 # - {name: ss2, type: ss, server: server, port: 443, cipher: chacha20-ietf-poly1305, password: password, plugin: obfs, plugin-opts: {mode: tls, host: bing.com}}
